@@ -1,61 +1,281 @@
 ﻿<!DOCTYPE html>
 <html lang="ko">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Default</title>
-    <link href="css/style.css" rel="stylesheet">
-    <!-- javaScript  -->
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/common.js"></script>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>제주특별자치도 오름탐방</title>
+        <link href="css/style.css" rel="stylesheet">
+        <!-- javaScript -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        
+        <script src="js/slick.min.js"></script>
+        <script src="js/common.js"></script>
+    </head>
 
-<body>
-    <!-- S:skip_navi -->
-    <div class="skip_navi">
-        <a class="sr-only sr-only-focusable" href="#header">메뉴 바로가기</a>
-        <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a>
-        <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a>
-    </div>
-    <!-- E:skip_navi -->
-    <!-- S:header -->
-    <header id="header">
-        <h1>Logo</h1>
-        <!-- S:main_menu -->
-        <nav id="main-menu">
-
-        </nav>
-        <!-- E:main_menu -->
-    </header>
-    <!-- E:header -->
-    <!-- S:mainContent -->
-    <div id="content" class="main">
-        <section class="">
+    <body>
+        <!-- S:skip_navi -->
+        <div class="skip_navi">
+            <a class="sr-only sr-only-focusable" href="#header">메뉴 바로가기</a>
+            <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a>
+            <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a>
+        </div>
+        <!-- E:skip_navi -->
+        <!-- S:header -->
+        <header id="header">
             <div class="container">
-                <h2>제목</h2>
-
-
-
+                <h1><a href="http://">제주특별자치도 오름탐방</a></h1>
+                <button class="mobile-menu"><i class="icon-menu"></i>모바일메뉴열기</button>
+                <button class="mobile-qr"><i class="icon-qrcode"></i>QR코드 스캔</button>
+                <!-- S:main_menu -->
+                <nav id="main-menu">
+                    <ul class="util">
+                        <li>
+                            <a href="">로그인</a>
+                        </li>
+                        <li>
+                            <a href="">회원가입</a>
+                        </li>
+                    </ul>
+                    <p class="today">Today
+                        <strong>2018.06.01</strong>
+                    </p>
+                    <ul class="menu">
+                        <li>
+                            <h2>
+                                <a href="">오름안내</a>
+                            </h2>
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="">공지사항</a>
+                            </h2>
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="">오름교육</a>
+                            </h2>
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="">경험공유</a>
+                            </h2>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- E:main_menu -->
             </div>
-        </section>
+        </header>
+        <!-- E:header -->
+        <!-- S:mainContent -->
+        <div id="content" class="main">
+            <section class="main-issue">
+                    <h2 class="sr-only">메인 이슈 영역</h2>
 
-        <article class="">
+                    <div class="weather">
+                        <h3 class="sr-only">날씨</h3>
+                        <ul>
+                            <li>
+                                <h4>제주시</h4>
+
+                                <i class="icon-weather01" aria-hidden="true"></i>
+                                <p>21℃ 맑음</p>
+                            </li>
+
+                            <li>
+                                <h4>서귀포시</h4>
+
+                                <i class="icon-weather02" aria-hidden="true"></i>
+                                <p>21℃ 맑음</p>
+                            </li>
+                            <li>
+                                <h4>성산포</h4>
+
+                                <i class="icon-weather03" aria-hidden="true"></i>
+                                <p>21℃ 맑음</p>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+
+
+                    <!-- 
+                        날씨 icon-weather01 : 맑음 
+                        icon-weather02 : 구름조금 
+                        icon-weather03 : 구름
+                        icon-weather04 : 구름많음 
+                        icon-weather05 : 비 
+                        icon-weather06 : 비/눈 조금 
+                        icon-weather07 : 진눈깨비 
+                        icon-weather08 : 눈 
+                    -->
+
+                    <div class="counter">
+                        <h3 class="sr-only">주요오름정보</h3>
+                        <ul>
+                            <li class="orum01">
+                                <p class="map"></p>
+                                <h4>다랑쉬오름</h4>
+
+                                <p class="count">
+                                    <strong>오늘의 방문자 32명</strong>
+                                    2018. 06. 01. 12:00 ~ 15:00 집계
+                                </p>
+                                <a href="">자세히보기</a>
+
+                                <h5>고근산 <small>오늘의 방문자 26명</small></h5>
+                            </li>
+                            <li class="orum02">
+                                <p class="map"></p>
+                                <h4>고근산</h4>
+
+                                <p class="count">
+                                    <strong>오늘의 방문자 32명</strong>
+                                    2018. 06. 01. 12:00 ~ 15:00 집계
+                                </p>
+                                <a href="">자세히보기</a>
+
+                                
+                                <h5>다랑쉬오름 <small>오늘의 방문자 26명</small></h5>
+                            </li>
+
+                        </ul>
+
+                        <button class="next">다음</button>
+                    </div>
+
+            </section>
+
+            <section class="main-info">
+                <div class="container">
+                    <h2 class="sr-only">메인 정보영역</h2>
+
+                    <div class="notice">
+                        <h3>공지사항
+                            <small>더보기 +</small>
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="">억새가 아름다운 계절 새별오름으로 떠나는 항파두리 항몽유적 역사탐방 프로그램 안내</a>
+                                <i>2018-06-20</i>
+                            </li>
+                            <li>
+                                    <a href="">억새가 아름다운 계절 새별오름으로 떠나는 항파두리 항몽유적 역사탐방 프로그램 안내</a>
+                                <i>2018-06-20</i>
+                            </li>
+                            <li>
+                                    <a href="">억새가 아름다운 계절 새별오름으로 떠나는 항파두리 항몽유적 역사탐방 프로그램 안내</a>
+                                <i>2018-06-20</i>
+                            </li>
+                            <li>
+                                    <a href="">억새가 아름다운 계절 새별오름으로 떠나는 항파두리 항몽유적 역사탐방 프로그램 안내</a>
+                                <i>2018-06-20</i>
+                            </li>
+                            <li>
+                                    <a href="">억새가 아름다운 계절 새별오름으로 떠나는 항파두리 항몽유적 역사탐방 프로그램 안내</a>
+                                <i>2018-06-20</i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="banner">
+                        <h3 class="sr-only">메인배너
+                        </h3>
+                        <ul>
+                            <li class="minwon">
+                                <a href="">
+                                    <strong>환경 및 긴급상황</strong>민원접수</a>
+                            </li>
+                            <li class="call">
+                                <a href="">
+                                    <strong>환경 및 긴급상황</strong>전화신고</a>
+                            </li>
+                            <li class="resque">
+                                <a href="">
+                                    <strong>응급신고</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-best">
+
+                <h2 class="sr-only">메인 지도영역</h2>
+                <div id="map">
+                    <!-- 지도깔아주세요 -->
+                </div>
+
+                <div class="container">
+                    <div class="best">
+                        <h3>BEST오름</h3>
+                        <ul>
+                            <li>
+                                <i>1</i>
+                                다랑쉬오름
+                            </li>
+                            <li>
+                                <i>2</i>
+                                고근산
+                            </li>
+                            <li>
+                                <i>3</i>
+                                새별오름
+                            </li>
+                            <li>
+                                <i>4</i>
+                                웃세붉은오름
+                            </li>
+                            <li>
+                                <i>5</i>
+                                용눈이오름
+                            </li>
+                            <li>
+                                <i>6</i>
+                                따라비오름
+                            </li>
+                            <li>
+                                <i>7</i>
+                                거문오름
+                            </li>
+                            <li>
+                                <i>8</i>
+                                군산오름
+                            </li>
+                            <li>
+                                <i>9</i>
+                                백약이오름
+                            </li>
+                            <li>
+                                <i>10</i>
+                                동검은이오름
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <!-- E:mainContent -->
+        <!-- S:footer -->
+        <footer id="footer">
             <div class="container">
-                <h2>제목</h2>
-
-
-
+                <h2>오름탐방</h2>
+                <address>(63122) 제주특별자치도 제주시 문연로 6(연동) 대표전화:064-120</address>
+                <p class="copyright">
+                    COPYRIGHT © 제주특별자치도. ALL RIGHT RESERVED.
+                </p>
+                <div class="callcenter">
+                    <h3>제주콜센터</h3>
+                    <a href="tel:064120">064<strong>120</strong></a>
+                </div>
             </div>
-        </article>
-    </div>
-    <!-- E:mainContent -->
-    <!-- S:footer -->
-    <footer id="footer">
-        <address>주소</address>
-    </footer>
-    <!-- E:footer -->
-</body>
+        </footer>
+        <!-- E:footer -->
+    </body>
 
 </html>

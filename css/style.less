@@ -1,7 +1,7 @@
 // out: ./style.css, compress: true, sourceMap: false
 @import "normalize.css";
 @import "rem.less";
-//@import "fontello.css";
+@import "fontello.css";
 
 
 
@@ -435,35 +435,930 @@ body {
 
     /* header */
     header {
+        .center;
+        .absolute;
+        z-index:2000;
+        top:0;
+        left:0;
+        right:0;
+        background:rgba(0,0,0,0.86);
+
         .container {
+            .rem(height, 62);
+
+            @media all and (min-width: 1200px) {
+                height:110px;
             }
+
+            h1 {
+                .block;
+                .rem(margin, 8 auto 0);
+                .rem(width, 91);
+                .rem(height, 43);
+
+                @media all and (min-width: 1200px) {
+                    margin:20px 0 0;
+                    width:334px;
+                    height:56px;
+                }
+
+                a {
+                    .block;
+                    height:100%;
+                    .zero;
+                    background:url("../images/logo-mobile.svg") no-repeat center / 100% 100%;
+
+                    @media all and (min-width: 1200px) {
+                        background:url("../images/logo.svg") no-repeat center / 100% 100%;
+                    }
+
+                }
+            }
+
+            button {
+                border:none;
+                .absolute;
+                background:none;
+                .mapazero;
+                .zero;
+
+                @media all and (min-width: 1200px) {
+                    .none;
+                }
+
+                i {
+                    color:@white;
+                    &::before {
+                        .mapazero;
+                    }
+                }
+
+                &.mobile-menu {
+
+                    .rem(top, 17);
+                    .rem(left, 10);
+
+                    i {
+                        .rem(font-size, 22);
+                    }
+                }
+
+                &.mobile-qr {
+                    .rem(top, 18);
+                    .rem(right, 10);
+
+                    i {
+                        .rem(font-size, 26);
+                    }
+                }
+
+
+            }
+
+            nav#main-menu {
+                @media all and (max-width: 1199px) {
+                    .none;
+                    .absolute;
+                    z-index:999;
+                    left:0;
+                    right:0;
+                    .rem(top, 62);
+                    background:rgba(0,0,0,0.9);
+
+                    &.on {
+                        .block;
+                    }
+
+                    ul.util {
+                        .rem(padding, 20 0);
+                        margin:0;
+                        background:#000;
+                        .no-list;
+                        .center;
+
+                        li {
+                            .inline-block;
+                            a {
+                                color:@white;
+                                .rem(font-size, 12);
+                            }
+
+                            &::after {
+                                .inline-block;
+                                .relative;
+                                .rem(top, 1);
+                                content:"";
+                                width:1px;
+                                .rem(height, 10);
+                                .rem(margin, 0 10);
+                                background:@white;
+                            }
+
+                            &:last-child {
+                                &::after {
+                                    .none;
+                                }
+                            }
+                        }
+                    }
+
+                    p.today {
+                        .block;
+                        margin:0;
+                        .rem(padding, 10 0);
+                        background:#444;
+                        .center;
+                        .rem(font-size, 12);
+                        font-family:verdana;
+                        color:#C4FF00;
+                    }
+
+                    ul.menu {
+                        margin:0;
+                        .rem(padding, 20);
+                        .no-list;
+
+                        li {
+                            h2 {
+                                .mapazero;
+
+                                a {
+                                    .normal;
+                                    .rem(font-size, 16);
+                                    .block;
+                                    .center;
+                                    color:@white;
+                                    .rem(line-height, 42);
+
+                                }
+                            }
+                        }
+                    }
+
+                    
+                }
+
+                @media all and (min-width: 1200px) {
+                    ul.util {
+                        .absolute;
+                        right:200px;
+                        top:46px;
+                        .mapazero;
+                        .no-list;
+
+                        li {
+                            .inline-block;
+
+                            a {
+                                color:#ccc;
+                                font-size:14px;
+                                padding:0 10px;
+                            }
+                        }
+                    }
+
+                    p.today {
+                        .absolute;
+                        right:0;
+                        top:16px;
+                        color:#fff;
+                        background:#000;
+                        height:44px;
+                        line-height:44px;
+                        .center;
+                        width:176px;
+                        font-family:verdana;
+                        border-radius:14px;
+                        color:#999;
+
+                        strong {
+                            color:#eee;
+                        }
+                    }
+
+                    ul.menu {
+                        .mapazero;
+                        .no-list;
+                        .absolute;
+                        left:390px;
+                        top:40px;
+
+                        li {
+                            .inline-block;
+                            padding:0 40px 0 0;
+
+                            h2 {
+                                .mapazero;
+
+                                a {
+                                    color:@white;
+                                    font-size:18px;
+
+                                    &:hover {
+                                        color:#C4FF00;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
     }
 
     div#content {
 
+
         /* SUB */
         &.main {
-            .container {
+
+            section.main-issue {
+                .center;
+                .relative;
+                .rem(padding, 62 0 0);
+                .rem(height, 320);
+                background:#000;
+
+                @media all and (min-width: 1200px) {
+                    height:790px;
+                    padding:110px 0 0;
+                }
+
+                div.counter {
+                    .absolute;
+                    .full-position;
+                    .hidden;
+
+                    ul {
+                        width:100%;
+                        height:100%;
+                        .mapazero;
+                        .no-list;
+
+                        li {
+                            .rem(height, 320);
+                            .inline-block;
+                            .top;
+
+                            @media all and (min-width: 1200px) {
+                                height:790px;
+                            
+                            }
 
 
+                            h4 {
+                                .absolute;
+                                left:50%;
+                                .rem(bottom, 90);
+                                .rem(height, 30);
+                                .zero;
+                                border-bottom:1px solid @white;
+
+                                @media all and (min-width: 1200px) {
+                                    height:42px;
+                                    border:none;
+                                    bottom:180px;
+                                }
+    
+                                
+                            }
+                            
+                            p.map {
+                                .mapazero;
+                                .block;
+                                .absolute;
+                                .rem(width, 143);
+                                .rem(height, 95);
+                                left:50%;
+                                .rem(margin-left, -71.5);
+                                .rem(bottom, 120);
+
+                                @media all and (min-width: 1200px) {
+                                    bottom:60px;
+                                    margin-left:-600px;
+                                    width:232px;
+                                    height:154px;
+                                }
+    
+                            }
+                            p.count {
+                                .mapazero;
+                                .absolute;
+                                .rem(bottom, 56);
+                                left:0;
+                                right:0;
+                                color:@white;
+                                .rem(font-size, 8);
+
+                                @media all and (min-width: 1200px) {
+                                    font-size:14px;
+                                    bottom:100px;
+                                    right:auto;
+                                    left:50%;
+                                    margin-left:-320px;
+                                    .left;
+                                    padding:0 0 0 20px;
+                                    border-left:1px solid @white;
+                                }
+
+                                strong {
+                                    .block;
+                                    .rem(font-size, 15);
+                                    .rem(margin, 0 0 2);
+                                    color:#C4FF00;
+                                    .normal;
+
+                                    @media all and (min-width: 1200px) {
+                                        font-size:24px;
+                                        margin:0 0 6px;
+                                    }
+                                }
+
+                            }
+
+                            a {
+                                .block;
+                                .absolute;
+                                .rem(bottom, 20);
+                                left:50%;
+                                .rem(margin-left, -45);
+                                .rem(font-size, 12);
+                                .rem(width, 90);
+                                background:#5E7B00;
+                                color:@white;
+                                .rem(border-radius, 5);
+                                .rem(padding, 6 0);
+                                
+                                @media all and (min-width: 1200px) {
+                                    font-size:18px;
+                                    margin-left:-60px;
+                                    bottom:100px;
+                                    width:120px;
+                                    padding:14px 0;
+                                }
+
+                            }
+
+                            h5 {
+                                .none;
+                                
+                                @media all and (min-width: 1200px) {
+                                    .block;
+                                    .normal;
+                                    .mapazero;
+                                    .absolute;
+                                    z-index:1500;
+                                    bottom:102px;
+                                    left:50%;
+                                    margin-left:390px;
+                                    .right;
+                                    color:@white;
+                                    font-size:26px;
+
+                                    small {
+                                        .block;
+                                        font-size:18px;
+                                        margin:6px 0 0;
+                                    }
+                                }
+
+                            }
+
+
+                            &.orum01 {
+                                background:url("../images/main-issue01.jpg") no-repeat center / cover;
+
+                                p.map {
+                                    background:url("../images/map-orum01.svg") no-repeat center top / 100% 100%;
+                                }
+
+                                h4 {
+                                    .rem(margin-left, -49.5);
+                                    .rem(width, 99);
+                                    background:url("../images/txt-orum01.svg") no-repeat center top / 100% auto;
+
+                                    @media all and (min-width: 1200px) {
+                                        width:187px;
+                                        margin-left:-320px;
+                                    }
+        
+                                }
+
+                            }
+                            &.orum02 {
+                                background:url("../images/main-issue02.jpg") no-repeat center / cover;
+
+                                p.map {
+                                    background:url("../images/map-orum02.svg") no-repeat center top / 100% 100%;
+                                }
+
+                                h4 {
+                                    .rem(margin-left, -30);
+                                    .rem(width, 60);
+                                    background:url("../images/txt-orum02.svg") no-repeat center top / 100% auto;
+
+                                    @media all and (min-width: 1200px) {
+                                        width:118px;
+                                        margin-left:-320px;
+                                    }
+                                }
+                            }
+
+
+                            
+                        }
+
+                        
+                    }
+                    button.next {
+                        .none;
+
+                        @media all and (min-width: 1200px) {
+                            .block;
+                            .mapazero;
+                            .zero;
+                            .pointer;
+                            outline:none;
+                            border:none;
+                            .absolute;
+                            z-index:1500;
+                            bottom:100px;
+                            left:50%;
+                            margin-left:420px;
+                            width:180px;
+                            height:59px;
+                            background:url("../images/main-next.svg") no-repeat right center / auto 100%;
+                        }
+
+                    }
+                }
+
+                div.weather {
+                    .absolute;
+                    z-index:1200;
+                    left:0;
+                    right:0;
+                    .rem(top, 70);
+                    color:@white;
+
+                    @media all and (min-width: 1200px) {
+                        .relative;
+                        top:30px;
+                        left:auto;
+                        right:auto;
+                        width:1200px;
+                        margin:0 auto;
+                    }
+
+                    ul {
+                        
+                        .mapazero;
+                        .no-list;
+                        .center;
+                        .hidden;
+                        .rem(height, 30);
+
+                        @media all and (min-width: 1200px) {
+                            height:42px;
+                        }
+
+                        li {
+                            .rem(font-size, 14);
+
+                            @media all and (min-width: 1200px) {
+                                .right;
+                                font-size: 24px;
+                            }
+
+
+                            h4 {
+                                .inline-block;
+                                .mapazero;
+                                .rem(margin-top, 8);
+                            }
+
+                            i {
+                                .inline-block;
+                                .relative;
+                                .top;
+                                .rem(font-size, 32);
+
+                                @media all and (min-width: 1200px) {
+                                    font-size:42px;
+                                }
+    
+
+                                &::before {
+                                    margin:0;
+                                }
+                            }
+
+                            p {
+                                .inline-block;
+                                .mapazero;
+                                .rem(margin-top, 8);
+                            }
+                        }
+                    }
+
+                }
+
+
+            }
+
+            section.main-info {
+                .center;
+                .rem(margin, 20 0);
+                .container {
+                .zero;
+
+                @media all and (min-width: 1200px) {
+                    margin:40px 0;
+                }
+
+                    div.notice {
+
+                        @media all and (min-width: 1200px) {
+                            .inline-block;
+                            width:680px;
+                        }
+
+                        h3 {
+                            .relative;
+                            .rem(font-size, 15);
+                            .rem(margin, 0 0 20);
+
+                            @media all and (min-width: 1200px) {
+                                font-size:24px;
+                            }
+
+                            small {
+                                .absolute;
+                                right:0;
+                                bottom:0;
+                                .rem(font-size, 10);
+
+                                
+                                @media all and (min-width: 1200px) {
+                                    font-size:14px;
+                                }
+    
+                            }
+                        }
+
+                        ul {
+                            .mapazero;
+                            .no-list;
+
+                            li {
+                                .zero;
+                                .rem(margin-bottom, 6);
+
+                                a {
+                                    .inline-block;
+                                    .top;
+                                    .rem(font-size, 12);
+                                    .ellipse;
+                                    .remCalc(width, 8);
+
+                                    @media all and (min-width: 1200px) {
+                                        .inline-block;
+                                        .ellipse;
+                                        font-size:17px;
+                                        margin-bottom:10px;
+                                        width:calc(~"100% - 126px");
+                                    }
+                                }
+
+                                &::before {
+                                    content:"·";
+                                    .inline-block;
+                                    .rem(font-size, 12);
+                                    .rem(width, 8);
+                                    
+                                    @media all and (min-width: 1200px) {
+                                        width:16px;
+                                        font-size:17px;
+                                        .top;
+                                    }
+                                }
+                                i {
+                                    .none;
+
+                                    @media all and (min-width: 1200px) {
+                                        .inline-block;
+                                        .top;
+                                        .right;
+                                        font-style:normal;
+                                        font-size:17px;
+                                        width:110px;
+                                        color:#999;
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    div.banner {
+                        .rem(padding, 10 0);
+
+                        @media all and (min-width: 1200px) {
+                            .inline-block;
+                            .top;
+                            width:490px;
+                            margin:0 0 0 30px;
+                            padding:0;
+                        }
+                        ul {
+                            .mapazero;
+                            .no-list;
+                            .zero;
+
+                            li {
+                                .inline-block;
+                                .relative;
+                                .top;
+                                width:calc(~"(100% - 20px) / 3");
+                                margin-right:10px;
+                                border-radius:50%;
+
+                                @media all and (min-width: 1200px) {
+                                    width:calc(~"(100% - 60px) / 2");
+                                    margin-left:30px;
+                                    margin-right:0;
+                                }
+
+                                &::before {
+                                    content:"";
+                                    .block;
+                                    padding-top:100%;
+                                }
+
+                                &:last-child {
+                                    margin-right:0;
+
+
+                                    @media all and (min-width: 1200px) {
+                                        .none;
+                                    }
+    
+
+                                }
+                                
+                                a {
+                                    .absolute;
+                                    .full-position;
+                                    .center;
+                                    .rem(font-size, 10);
+                                    padding:60% 0 0;
+                                    line-height:1.4;
+
+                                    @media all and (min-width: 1200px) {
+                                        font-size:18px;
+                                    }
+
+                                    strong {
+                                        .block;
+                                        .normal;
+                                    }
+                                }
+
+                                &.minwon {
+                                    background:url("../images/banner01.svg") no-repeat center 26% #ACCBD6;
+                                    .rem(background-size, 32 auto);
+
+                                    @media all and (min-width: 1200px) {
+                                        background-position: center 34%;
+                                        background-size:60px auto;
+                                    }
+
+
+                                }
+
+                                &.call {
+                                    background:url("../images/banner02.svg") no-repeat center 20% #CCD6AC;
+                                    .rem(background-size, 32 auto);
+
+                                    @media all and (min-width: 1200px) {
+                                        background-position: center 26%;
+                                        background-size:60px auto;
+                                    }
+                                }
+
+                                &.resque {
+                                    background:url("../images/banner03.svg") no-repeat center 26% #D6AEAC;
+                                    .rem(background-size, 32 auto);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            section.main-best {
+                .center;
+                .relative;
+                background:#ccc;
+                .rem(height, 300);
+                
+                @media all and (min-width: 1200px) {
+                    height:420px;
+                }
+
+                div#map {
+                    .absolute;
+                    .full-position;
+                }
+
+                .container {
+
+                    div.best {
+                        .inline-block;
+                        .absolute;
+                        left:50%;
+                        .rem(top, 10);
+                        background:rgba(255,255,255,0.6);
+                        .rem(width, 158);
+                        .rem(height, 30);
+                        .rem(margin, 0 0 0 -79);
+                        .rem(border-radius, 6);
+                        .rem(padding, 9 9 0);
+                        .zero;
+                        white-space:nowrap;
+
+                        @media all and (min-width: 1200px) {
+                            left:0;
+                            top:20px;
+                            margin:0;
+                            width:230px;
+                            height:auto;
+                            white-space:pre;
+                            padding:16px;
+                        }
+
+                        h3 {
+                            .inline-block;
+                            .top;
+                            margin:0;
+                            .rem(font-size, 12);
+
+                            @media all and (min-width: 1200px) {
+                                width:100%;
+                                font-size:24px;
+                                margin:0 0 20px;
+                            }
+                        }
+
+                        ul {
+                            .top;
+                            .inline-block;
+                            white-space:nowrap;
+                            .hidden;
+                            .mapazero;
+                            .no-list;
+                            .rem(font-size, 11);
+
+                            @media all and (min-width: 1200px) {
+                                width:100%;
+                                font-size:15px;
+                            }
+
+                            li {
+                                @media all and (min-width: 1200px) {
+                                    margin-bottom:8px;
+                                }
+    
+                                i {
+                                    .inline-block;
+                                    .top;
+                                    background:#5E7B00;
+                                    .rem(width, 12);
+                                    .rem(height, 12);
+                                    .rem(margin, 0 4 0 10);
+                                    .rem(line-height, 12);
+                                    .rem(font-size, 7);
+                                    font-style:normal;
+                                    .center;
+                                    color:@white;
+                                    
+                                    @media all and (min-width: 1200px) {
+
+                                        width:18px;
+                                        height:18px;
+                                        line-height:18px;
+                                        font-size:12px;
+                                        margin:0 4px 0 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                
+
+                }
             }
         }
 
         /* SUB */
         &.sub {
-            .container {
 
 
-            }
+
+
+
+
         }
 
     }
 
     footer#footer {
+        .center;
+        background:#333;
+
         .container {
+            color:#cccccc;
+            .rem(padding, 20 10);
+            .rem(font-size, 10);
+            .center;
+
+            @media all and (min-width: 1200px) {
+                padding:36px 0 36px 160px;
+                font-size:15px;
+                .left;
+            }
+
+
+            h2 {
+                .none;
+
+                @media all and (min-width: 1200px) {
+                    .block;
+                    .absolute;
+                    left:0;
+                    top:30px;
+                    width:108px;
+                    height:51px;
+                    .zero;
+                    background:url("../images/logo-footer.svg") no-repeat center / 100% 100%;
+                }
+            }
+
+            address {
+                font-style:normal;
+                word-break:keep-all;
+            }
+
+            p.copyright {
+                color:#999;
+                word-break:keep-all;
+            }
+
+            div.callcenter {
+
+                .block;
+                .left;
+                .rem(width, 95);
+                color:#999999;
+                .rem(margin, 20 auto);
+                .rem(padding, 0 0 0 20);
+                
+                background:url("../images/phone.svg") no-repeat left center / auto 100%;
+
+                @media all and (min-width: 1200px) {
+                    .absolute;
+                    right:0;
+                    top:20px;
+                    width:140px;
+                    padding:0 0 0 30px;
+                }
+    
+                h3 {
+                    .rem(font-size, 12);
+                    .rem(margin, 0 0 4);
+
+                    @media all and (min-width: 1200px) {
+                        font-size:18px;
+                    }
+        
+                }
+
+                a {
+                    color:#999;
+                    .rem(font-size, 15);
+
+                    @media all and (min-width: 1200px) {
+                        font-size:28px;
+                    }
+
+                    strong {
+                        color:#CCCCCC;
+                    }
+                }
+            }
 
 
         }
-
     }
 }
