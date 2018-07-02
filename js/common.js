@@ -56,5 +56,9 @@ $(document).ready(function() {
         $('nav#main-menu').toggleClass("on");
     });
 
+    $('aside.sub-navigation>div>ul>li>a').on('click', function() {
+        $(this).toggleClass("on");
+        $(this).find("i").toggleClass("on");
+    });
 });
 

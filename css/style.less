@@ -680,6 +680,7 @@ body {
                 .rem(height, 320);
                 background:#000;
 
+
                 @media all and (min-width: 1200px) {
                     height:790px;
                     padding:110px 0 0;
@@ -700,6 +701,14 @@ body {
                             .rem(height, 320);
                             .inline-block;
                             .top;
+
+                            &:before {
+                                content:"";
+                                .absolute;
+                                .full-position;
+                                background:rgba(0,0,0,0.6);
+                            }
+
 
                             @media all and (min-width: 1200px) {
                                 height:790px;
@@ -1264,13 +1273,145 @@ body {
         /* SUB */
         &.sub {
 
+            section.sub-image {
+                .inline-block;
+                .relative;
+                width:100%;
+                .rem(height, 160);
+                .rem(padding-top, 76);
+                .center;
 
+                &:before {
+                    content:"";
+                    .absolute;
+                    .full-position;
+                    background:rgba(0,0,0,0.3);
+                }
 
+                @media all and (min-width: 1200px) {
+                    padding-top:190px;
+                    height:354px;
+                }
 
+                &.sub01 {
+                    background:url("../images/sub-image01.jpg") no-repeat center / cover;
+                }
 
+                h2 {
+                    .inline-block;
+                    .relative;
+                    z-index:10;
+                    .mapazero;
+                    .zero;
+                    .rem(width, 78);
+                    .rem(height, 23);
+                    background:url("../images/title01.svg") no-repeat center / 100% 100%;
 
+                    @media all and (min-width: 1200px) {
+                        width:174px;
+                        height:50px;
+                    }
+                }
+            }
+
+            aside.sub-navigation {
+                .center;
+                .relative;
+                z-index:10;
+                border-bottom:1px solid #ccc;
+
+                .container {
+                    .none;
+
+                    @media all and (min-width: 1200px) {
+                        .block;
+                        line-height:49px;
+                        &>ul {
+                            .mapazero;
+                            .zero;
+                            .no-list;
+                            border-left:1px solid #ccc;
+
+                            &>li {
+                                .top;
+                                .relative;
+                                .inline-block;
+
+                                &>a {
+                                    .block;
+                                    height:100%;
+                                    .relative;
+                                    min-width:180px;
+                                    padding:0 10px;
+                                    font-size:16px;
+                                    border-right:1px solid #ccc;
+
+                                    &.on {
+                                        background:#f9f9f9;
+                                    }
+                                    
+                                    i {
+                                        .absolute;
+                                        font-size:20px;
+                                        right:10px;
+                                        top:0;
+                                        color:#555;
+                                        .ani();
+
+                                        &.on {
+                                            transform:rotate(180deg);
+                                            .ani();
+                                        }
+                                    }
+                                }
+
+                                &.home {
+                                    a {
+                                        .zero;
+                                        min-width:50px;
+                                    }
+                                }
+
+                                ul {
+                                    .none;
+                                    .no-list;
+                                    margin:0;
+                                    .absolute;
+                                    padding:10px 20px;
+                                    background:#f9f9f9;
+                                    left:-1px;
+                                    right:0;
+                                    top:49px;
+                                    border:1px solid #ccc;
+                                    font-size:14px;
+
+                                    li {
+                                        line-height:38px;
+                                    }
+                                }
+
+                                a.on + ul {
+                                    .block;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            section.sub-contents {
+                .center;
+
+                .container {
+                    .rem(padding, 20 10);
+
+                    @media all and (min-width: 1200px) {
+                        padding:30px 0;
+                    }
+                }
+            }
         }
-
     }
 
     footer#footer {
