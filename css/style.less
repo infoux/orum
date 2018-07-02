@@ -1475,7 +1475,7 @@ body {
                 }
             }
 
-            section.sub-contents {
+            section.sub-head {
                 .center;
 
                 .container {
@@ -1646,6 +1646,10 @@ body {
                         border-bottom:1px solid #ccc;
                         .relative;
 
+                        @media all and (min-width: 1200px) {
+                            margin:30px 0;
+                        }
+
                         ul {
                             .mapazero;
                             .no-list;
@@ -1664,6 +1668,8 @@ body {
                                 .rem(margin-bottom, 20);
 
                                 @media all and (min-width: 1200px) {
+                                    margin-bottom:10px;
+
                                     &.half {
                                         width:50%;
                                     }
@@ -1835,6 +1841,7 @@ body {
                                     @media all and (min-width: 1200px) {
                                         width:200px;
                                         height:40px;
+                                        font-size:14px;
                                     }
                                 }
 
