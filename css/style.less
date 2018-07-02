@@ -144,7 +144,7 @@
     .inline-block;
     .center;
     .zero;
-    .rem(margin, 20 0 30);
+    .rem(margin, 20 0 40);
     width: 100%;
 
     a {
@@ -173,6 +173,7 @@
         &.jump,
         &.move {
             .zero;
+            background:#eee;
             i {
                 .rem(font-size, 10);
                 @media all and (min-width: 1200px) {
@@ -198,7 +199,7 @@
 
     .active,
     strong {
-        background: @main;
+        background: #5E7B00;
         color: @white;
         .normal;
         border-color: transparent;
@@ -1479,10 +1480,10 @@ body {
                 .center;
 
                 .container {
-                    .rem(padding, 20 10);
+                    .rem(padding, 20 10 30);
 
                     @media all and (min-width: 1200px) {
-                        padding:30px 0;
+                        padding:30px 0 40px;
                     }
 
                     ul.orum-tab {
@@ -1683,7 +1684,7 @@ body {
                                     
                                     @media all and (min-width: 1200px) {
                                         .inline-block;
-                                        width:140px;
+                                        width:160px;
                                         line-height:40px;
                                         font-size:17px;
                                     }
@@ -1861,7 +1862,7 @@ body {
                                         .remCalc(width, 50);
 
                                         @media all and (min-width: 1200px) {
-                                            width:400px;
+                                            width:900px;
                                         }
                                     }
                                 }
@@ -1869,6 +1870,8 @@ body {
 
                             &.on {
                                 height:auto;
+                                max-height:1000px;
+                                
                                 .ani();
                             }
                         }
@@ -1899,6 +1902,7 @@ body {
 
 
                             i {
+                                .inline-block;
                                 color:#999;
                                 .rem(margin-left, 10);
 
@@ -1909,6 +1913,254 @@ body {
                             }
 
                         }
+                    }
+                }
+            }
+
+            section.sub-orum-list {
+                .center;
+
+                .container {
+                    .center;
+
+                    @media all and (min-width: 1200px) {
+                        .left;
+                        .relative;
+                    }
+
+                    h3 {
+                        .rem(font-size, 17);
+                        .rem(margin, 0 0 20);
+
+                        @media all and (min-width: 1200px) {
+                            font-size:24px;
+                            margin:0 0 20px;
+                        }
+                    }
+
+                    ul.filter {
+                        .no-list;
+                        padding:0;
+                        .rem(margin, 0 0 10);
+                        .zero;
+                        .center;
+
+                        @media all and (min-width: 1200px) {
+                            .absolute;
+                            right:0;
+                            top:10px;
+                        }
+
+                        li {
+                            .inline-block;
+                            .rem(margin, 0 4);
+
+                            button {
+                                .rem(font-size, 12);
+                                border:none;
+                                background:none;
+
+                                @media all and (min-width: 1200px) {
+                                    font-size:17px;
+                                }
+                                &.on {
+                                    color:#5E7B00;
+
+                                    i {
+                                        .inline-block;
+                                        transform:rotate(180deg);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    ul.list {
+                        .no-list;
+                        padding:0;
+                        .rem(margin, 0 0 20);
+                        border-top:2px solid #5E7B00;
+
+                        &>li {
+                            .relative;
+                            border-bottom:1px solid #ccc;
+                            .rem(padding, 20 0);
+
+                            @media all and (min-width: 1200px) {
+                                padding:20px 0 20px 260px;
+                                min-height:190px;
+                            }
+
+                            p.image {
+                                margin:0;
+
+                                @media all and (min-width: 1200px) {
+                                    .absolute;
+                                    left:0;
+                                    top:20px;
+                                    width:225px;
+                                    height:150px;
+                                    .hidden;
+
+                                    img {
+                                        min-width:225px;
+                                        min-height:150px;
+                                    }
+                                }
+
+
+                                img {
+                                    max-width:100%;
+                                }
+                            }
+
+                            h4 {
+                                .rem(font-size, 15);
+                                .rem(margin, 10 0);
+                                
+                                @media all and (min-width: 1200px) {
+                                    font-size:22px;
+                                    margin:0 0 20px;
+                                }
+                            }
+
+                            p.location {
+                                .rem(margin, 0 0 4);
+                                .rem(font-size, 12);
+                                
+                                @media all and (min-width: 1200px) {
+                                    font-size:14px;
+                                }
+
+                            }
+
+                            p.tel {
+                                .rem(margin, 0 0 10);
+                                .rem(font-size, 12);
+
+                                @media all and (min-width: 1200px) {
+                                    font-size:14px;
+                                }
+
+                                a {
+                                    color:#333;
+                                    text-decoration:none;
+                                }
+                            }
+
+                            p.level {
+                                .rem(margin, 0 0 16);
+                                .rem(font-size, 12);
+                                .bold;
+
+                                @media all and (min-width: 1200px) {
+                                    .absolute;
+                                    right:0;
+                                    top:30px;
+                                    font-size:17px;
+                                    color:#555;
+                                }
+                                
+                            }
+
+                            ul {
+                                .mapazero;
+                                .zero;
+
+                                @media all and (min-width: 1200px) {
+                                    margin-top:30px;
+                                }
+
+                                li {
+                                    .inline-block;
+                                    .rem(font-size, 12);
+                                    color:#5E7B00;
+                                    .rem(margin-right, 14);
+
+                                    @media all and (min-width: 1200px) {
+                                        font-size:17px;
+                                    }
+
+                                    &:last-child {
+                                        margin-right:none;
+                                    }
+
+                                    .icon-eye,
+                                    .icon-chat {
+                                        .rem(margin-right, 4);
+                                    }
+
+                                    .icon-star {
+                                        color:#ccc;
+
+                                        &.on {
+                                            color:#FF9300;
+                                        }
+
+                                        &::before {
+                                            margin:0;
+                                        }
+                                    }
+                                }
+                            }
+
+                            div.link-set {
+                                .zero;
+                                .rem(margin, 20 0 0);
+
+                                @media all and (min-width: 1200px) {
+                                    .absolute;
+                                    right:0;
+                                    bottom:20px;
+                                    width:296px;
+                                }
+
+
+                                a {
+                                    .inline-block;
+                                    .rem(font-size, 12);
+                                    .rem(line-height, 30);
+                                    border:1px solid #ccc;
+                                    width:calc(~"(100% - 10px) / 2");
+                                    
+                                    @media all and (min-width: 1200px) {
+                                        line-height:46px;
+                                        font-size:17px;
+                                        .center;
+                                    }
+
+
+                                    &:first-child {
+                                        margin-right:10px;
+                                    }
+
+                                    i {
+                                        color:#5E7B00;
+                                        .rem(margin-right, 4);
+                                    }
+                                }
+                            }
+
+                            p.tag {
+                                .absolute;
+                                margin:0;
+                                left:0;
+                                .rem(top, 20);
+                                .rem(font-size, 14);
+                                .rem(line-height, 30);
+                                .rem(padding, 0 10);
+                                color:@white;
+
+                                &.location01 {
+                                    background:#5771B5;
+                                }
+                                
+                                &.location02 {
+                                    background:#865231;
+                                }
+                            }
+                        }
+
                     }
                 }
             }
