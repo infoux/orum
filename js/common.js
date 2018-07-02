@@ -34,11 +34,34 @@ $(document).ready(function() {
                 arrows: false,
                 
             });
+
+
+            $('#header .menu h2 a').bind("click", function(e) {
+                e.preventDefault();
+                $(this).parent().parent().toggleClass("on");
+            });
+        
+
         }
         else {
             try {
                 $('.main-best .best>ul').slick('unslick');
             } catch{};
+
+
+            $('#header .menu li').hover(function() {
+                $(this).addClass("on");
+            }, function(){
+                $(this).removeClass("on")
+            });
+
+            $('#header .menu h2 a').unbind("click", function(e) {
+                e.preventDefault();
+                $(this).parent().parent().toggleClass("on");
+            });
+        
+
+
         }
     }
     modeChange();
@@ -58,6 +81,11 @@ $(document).ready(function() {
 
     $('aside.sub-navigation>div>ul>li>a').on('click', function() {
         $(this).toggleClass("on");
+        $(this).find("i").toggleClass("on");
+    });
+
+    $('.orum-search button.more').on('click', function() {
+        $(".orum-search ul").toggleClass("on");
         $(this).find("i").toggleClass("on");
     });
 });

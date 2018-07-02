@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>제주특별자치도 오름탐방</title>
+        <link href="css/style.css" rel="stylesheet">
+        <!-- javaScript -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        
+        <script src="js/slick.min.js"></script>
+        <script src="js/common.js"></script>
+    </head>
+
+    <body>
+        <!-- S:skip_navi -->
+        <div class="skip_navi">
+            <a class="sr-only sr-only-focusable" href="#header">메뉴 바로가기</a>
+            <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a>
+            <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a>
+        </div>
+        <!-- E:skip_navi -->
+        <!-- S:header -->
+        <header id="header">
+            <div class="container">
+                <h1><a href="http://">제주특별자치도 오름탐방</a></h1>
+                <button class="mobile-menu"><i class="icon-menu"></i>모바일메뉴열기</button>
+                <button class="mobile-qr"><i class="icon-qrcode"></i>QR코드 스캔</button>
+                <!-- S:main_menu -->
+                <nav id="main-menu">
+                    <ul class="util">
+                        <li>
+                            <a href="">로그인</a>
+                        </li>
+                        <li>
+                            <a href="">회원가입</a>
+                        </li>
+                    </ul>
+                    <p class="today">Today
+                        <strong>2018.06.01</strong>
+                    </p>
+                    <ul class="menu">
+                        <li>
+                            <h2>
+                                <a href="">오름안내</a>
+                            </h2>
+
+                            <ul>
+                                <li><a href="">전체</a></li>
+                                <li><a href="">말굽형</a></li>
+                                <li><a href="">원추형</a></li>
+                                <li><a href="">원형</a></li>
+                                <li><a href="">복합형</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="">공지사항</a>
+                            </h2>
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="">오름교육</a>
+                            </h2>
+
+                            <ul>
+                                <li><a href="">오름 모니터링 방법</a></li>
+                                <li><a href="">오름 탐방시 주의사항</a></li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="">경험공유</a>
+                            </h2>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- E:main_menu -->
+            </div>
+        </header>
+        <!-- E:header -->
+        <!-- S:mainContent -->
+        <div id="content" class="sub">
+            <section class="sub-image sub01">
+                    <h2 class="">오름탐방</h2>
+
+
+
+            </section>
+            <aside class="sub-navigation">
+                    <div class="container">
+                        <ul>
+                            <li class="home"><a href="/"><i class="icon-home"></i>메인화면</a></li>
+                            <li><a href="#">오름안내<i class="icon-angle-down"></i></a>
+                            
+                                <ul>
+                                    <li><a href="">오름안내</a></li>
+                                    <li><a href="">공지사항</a></li>
+                                    <li><a href="">오름교육</a></li>
+                                    <li><a href="">경험공유</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">전체<i class="icon-angle-down"></i></a>
+                            
+                                <ul>
+                                    <li><a href="">전체</a></li>
+                                    <li><a href="">말굽형</a></li>
+                                    <li><a href="">원추형</a></li>
+                                    <li><a href="">원형</a></li>
+                                    <li><a href="">복합형</a></li>
+                                </ul>
+                            </li>
+    
+    
+                        </ul>
+                    </div>
+                </aside>
+            <section class="sub-contents">
+                <div class="container">
+
+                <ul class="orum-tab">
+                    <li><a href="">전체 <i>(368)</i></a></li>
+                    <li class="on"><a href="">말굽형 <i>(174)</i></a></li>
+                    <li><a href="">원추형 <i>(102)</i></a></li>
+                    <li><a href="">원형 <i>(53)</i></a></li>
+                    <li><a href="">복합형 <i>(39)</i></a></li>
+                </ul>
+
+                <div class="info-box">
+                    <h3>말굽형 오름</h3>
+                    <p>
+                        분화구의 일부분이 용암유출과 같은 요인에 이해 한쪽 부분이 침식되어 형성된 오름으로,<br>
+                        화구 모양이 말굽과 같다하여 말굽형으로 분류하고 있습니다.
+                    </p>
+                    <div id="map">
+                            <!-- 지도깔아주세요 -->
+
+                            <img src="images/map-dot.png">
+                        </div>
+                </div>
+
+                <fieldset class="orum-search">
+                    <legend class="sr-only">오름 검색폼</legend>
+
+                    <ul>
+                        <li class="search-text">
+                            <h4>
+                                <label for="text">오름검색</label>
+                            </h4>
+
+                            <input id="text" type="text" placeholder="오름검색">
+                            <button><i class="icon-search"></i>검색</button>
+                        </li>
+
+                        <li>
+                            <h4>분화구형태</h4>
+
+                            <input id="crater-all" type="checkbox" checked>
+                            <label for="crater-all"><i class="icon-angle-down"></i>전체</label>
+                            
+                            <input id="crater-01" type="checkbox">
+                            <label for="crater-01"><i class="icon-angle-down"></i>말굽형</label>
+
+                            <input id="crater-02" type="checkbox">
+                            <label for="crater-02"><i class="icon-angle-down"></i>원추형</label>
+
+                            <input id="crater-03" type="checkbox">
+                            <label for="crater-03"><i class="icon-angle-down"></i>원형</label>
+
+                            <input id="crater-04" type="checkbox">
+                            <label for="crater-04"><i class="icon-angle-down"></i>복합형</label>
+                        </li>
+
+                        <li class="half">
+                            <h4>
+                                <label for="city">시구분</label>
+                            </h4>
+
+                            <select id="city">
+                                <option>전체</option>
+                            </select>
+                        </li>
+
+                        <li class="half">
+                            <h4>
+                                <label for="legion">지역구분</label>
+                            </h4>
+
+                            <select id="legion">
+                                <option>전체</option>
+                            </select>
+                        </li>
+
+                        <li class="half">
+                            <h4>탐방로여부</h4>
+                            
+                            <input name="route" id="route-all" type="radio" checked>
+                            <label for="route-all">전체</label>
+
+                            <input name="route" id="route-yes" type="radio">
+                            <label for="route-yes">유</label>
+
+                            <input name="route" id="route-no" type="radio">
+                            <label for="route-no">무</label>
+                        </li>
+
+                        <li class="half">
+                            <h4>등반난이도</h4>
+                            
+                            <input name="level" id="level-all" type="radio" checked>
+                            <label for="level-all">전체</label>
+
+                            <input name="level" id="level01" type="radio">
+                            <label for="level01">상</label>
+
+                            <input name="level" id="level02" type="radio">
+                            <label for="level02">중</label>
+
+                            <input name="level" id="level03" type="radio">
+                            <label for="level03">하</label>
+                        </li>
+                    </ul>
+
+                    <button class="more">상세검색<i class="icon-angle-down"></i></button>
+
+                </fieldset>
+
+
+
+
+                </div>
+            </section>
+
+        </div>
+        <!-- E:mainContent -->
+        <!-- S:footer -->
+        <footer id="footer">
+            <div class="container">
+                <h2>오름탐방</h2>
+                <address>(63122) 제주특별자치도 제주시 문연로 6(연동) 대표전화:064-120</address>
+                <p class="copyright">
+                    COPYRIGHT © 제주특별자치도. ALL RIGHT RESERVED.
+                </p>
+                <div class="callcenter">
+                    <h3>제주콜센터</h3>
+                    <a href="tel:064120">064<strong>120</strong></a>
+                </div>
+            </div>
+        </footer>
+        <!-- E:footer -->
+    </body>
+
+</html>
