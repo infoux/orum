@@ -189,6 +189,36 @@
       "css": "angle-left",
       "code": 61700,
       "src": "fontawesome"
+    },
+    {
+      "uid": "9937d762aee170b7350b15dd02dd34a3",
+      "css": "cab",
+      "code": 61881,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "s51at1xi1fkaomxvp6dqaax5jmyhtn4h",
+      "css": "basket-alt",
+      "code": 59408,
+      "src": "modernpics"
+    },
+    {
+      "uid": "0d0a49f05cb202227853f85ce5f63cdc",
+      "css": "toilet",
+      "code": 59451,
+      "src": "maki"
+    },
+    {
+      "uid": "63b86fedd4ee9ad2105f54f4888e7088",
+      "css": "info",
+      "code": 59407,
+      "src": "entypo"
+    },
+    {
+      "uid": "08a23ea96a596b1b5f12f6abbbc8f5f9",
+      "css": "location",
+      "code": 59409,
+      "src": "iconic"
     }
   ]
 }
