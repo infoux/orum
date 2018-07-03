@@ -46,7 +46,7 @@ $(document).ready(function() {
         else {
             try {
                 $('.main-best .best>ul').slick('unslick');
-            } catch{};
+            } catch(e){};
 
 
             $('#header .menu li').hover(function() {
@@ -70,7 +70,7 @@ $(document).ready(function() {
     $(window).resize(function() {
         try {
             modeChange();
-        } catch{};
+        } catch(e){};
     });
 
 
