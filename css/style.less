@@ -419,6 +419,115 @@ body {
 }
 
 
+
+#ui-datepicker-div {
+    background:@white;
+    .rem(padding, 10);
+    .drop-shadow();
+    .rem(font-size, 11);
+    border:1px solid #ccc;
+
+    @media all and (min-width: 1200px) {
+        font-size:17px;
+        padding:20px;
+    }
+
+    div.ui-datepicker-header {
+        .relative;
+        .center;
+        .rem(margin, 0 0 10);
+        
+
+        @media all and (min-width: 1200px) {
+            margin:0 0 20px;
+        }
+
+        a.ui-datepicker-prev {
+            .absolute;
+            left:0;
+            .rem(font-size, 10);
+            .pointer;
+
+            &::before {
+                content:"< ";
+            }
+            
+            @media all and (min-width: 1200px) {
+                font-size:14px;
+                top:10px;
+            }
+        }
+
+        a.ui-datepicker-next {
+            .absolute;
+            right:0;
+            .rem(font-size, 10);
+            .pointer;
+
+            &::after {
+                content:" >";
+            }
+
+            @media all and (min-width: 1200px) {
+                font-size:14px;
+                top:10px;
+            }
+
+        }
+        div.ui-datepicker-title {
+            .rem(font-size, 12);
+
+            @media all and (min-width: 1200px) {
+                font-size:22px;
+            }
+        }
+    }
+
+    table {
+        border-spacing:0;
+
+
+        th,
+        td {
+            .rem(width, 26);
+            .rem(height, 26);
+            .center;
+
+            @media all and (min-width: 1200px) {
+                width:40px;
+                height:40px;
+            }
+
+            a {
+                .block;
+                .top;
+                height:100%;
+                .rem(line-height, 26);
+                border-radius:50%;
+
+                @media all and (min-width: 1200px) {
+                    line-height:40px;
+                }
+                &:hover {
+                    background:#eee;
+                }
+
+                &.ui-state-highlight {
+                    background:#5E7B00;
+                }
+            }
+
+            &.ui-datepicker-today {
+                a {
+                    background:#B1D04B;
+                    color:@white;
+                }
+            }
+        }
+    }
+}
+
+
 /* style */
 
 body {
@@ -969,10 +1078,11 @@ body {
                             z-index:1500;
                             bottom:100px;
                             left:50%;
-                            margin-left:420px;
-                            width:180px;
+                            margin-left:460px;
+                            width:140px;
                             height:59px;
-                            background:url("../images/main-next.svg") no-repeat right center / auto 100%;
+                            background:url("../images/main-next.svg") no-repeat right center / 32px 59px;
+
                         }
 
                     }
@@ -1806,7 +1916,7 @@ body {
                                     background:@white;
                                     .center;
                                     .rem(line-height, 30);
-                                    width:calc(~"100% / 5");
+                                    width:calc(~"100% / 4");
                                     .pointer;
 
                                     &:first-of-type {
@@ -1914,6 +2024,8 @@ body {
 
                         }
                     }
+
+
                 }
             }
 
@@ -2778,6 +2890,7 @@ body {
                         .no-list;
                         .mapazero;
                         .zero;
+                        white-space:nowrap;
 
                         li {
                             .relative;
@@ -2873,6 +2986,288 @@ body {
 
                 }
             }
+
+            section.sub-chart {
+
+                .center;
+
+                .container {
+    
+                    h3 {
+                        .center;
+                        .rem(font-size, 20);
+                        .rem(margin, 20 0 10);
+
+                        @media all and (min-width: 1200px) {
+                            font-size:36px;
+                            margin:40px 0 30px;
+                        }
+    
+                    }
+
+                    fieldset.sort {
+                        border:none;
+                        background:#f4f4f4;
+                        .rem(padding, 20 20 0);
+                        .rem(margin, 20 0);
+                        .relative;
+
+                        @media all and (min-width: 1200px) {
+                            margin:30px 0;
+                        }
+
+                        ul {
+                            .inline-block;
+                            .mapazero;
+                            .no-list;
+                            .zero;
+                            width:100%;
+
+                            @media all and (min-width: 1200px) {
+                                border-bottom:1px solid #ccc;
+                            }
+    
+
+                            li {
+                                .inline-block;
+                                .top;
+                                width:100%;
+                                .rem(margin-bottom, 20);
+
+                                @media all and (min-width: 1200px) {
+                                    margin-bottom:10px;
+
+                                    &.half {
+                                        width:50%;
+                                    }
+
+                                }
+                                h4 {
+                                    .top;
+                                    .rem(margin, 0 0 10);
+                                    .rem(width, 70);
+                                    .rem(font-size, 11);
+                                    
+                                    @media all and (min-width: 1200px) {
+                                        .inline-block;
+                                        width:160px;
+                                        line-height:40px;
+                                        font-size:17px;
+                                    }
+                                }
+                                span {
+                                    .inline-block;
+                                    .rem(line-height, 30);
+                                    .top;
+                                    .rem(font-size, 12);
+                                    width:40px;
+                                    .center;
+
+                                    @media all and (min-width: 1200px) {
+                                        line-height:40px;
+                                        font-size:17px;
+                                    }
+                                }
+                                input[type="text"] {
+                                    .top;
+                                    .rem(font-size, 11);
+                                    .rem(height, 30);
+                                    .rem(padding, 0 10);
+                                    border:none;
+                                    width:calc(~"50% - 20px");
+                                    
+                                    @media all and (min-width: 1200px) {
+                                        height:40px;
+                                        font-size:17px;
+                                        width:140px;
+                                    }
+                                }
+                                button {
+                                    .rem(height, 30);
+                                    .rem(width, 50);
+                                    border:none;
+                                    .mapazero;
+                                    background:#5E7B00;
+                                    color:@white;
+                                    .pointer;
+
+                                    @media all and (min-width: 1200px) {
+                                        height:40px;
+                                    }
+
+                                    i {
+                                        .rem(font-size, 14);
+
+                                        @media all and (min-width: 1200px) {
+                                            font-size:20px;
+                                        }
+                                    }
+                                }
+
+                                input[type="checkbox"],
+                                input[type="radio"] {
+                                    .none;
+                                }
+                                
+                                input[type="checkbox"] + label {
+                                    .inline-block;
+                                    .rem(font-size, 11);
+                                    border:1px solid #ccc;
+                                    border-left:none;
+                                    background:@white;
+                                    .center;
+                                    .rem(line-height, 30);
+                                    width:calc(~"100% / 5");
+                                    .pointer;
+
+                                    &:first-of-type {
+                                        border-left:1px solid #ccc;
+
+                                        @media all and (min-width: 1200px) {
+                                            border:none;
+                                        }
+                                    }
+
+                                    @media all and (min-width: 1200px) {
+                                        .relative;
+                                        border:none;
+                                        width:auto;
+                                        .hidden;
+                                        font-size:14px;
+                                        line-height:40px;
+                                        margin:0 10px 0 0;
+                                        padding:0 20px 0 0;
+                                        border-radius:10px;
+
+                                    }
+
+                                    i {
+                                        .none;
+
+                                        @media all and (min-width: 1200px) {
+                                            .inline-block;
+                                            left:0;
+                                            top:0;
+                                            padding:0 5px;
+                                            margin:0 10px 0 0;
+                                            background:#ccc;
+                                            color:#999;
+                                        }
+                                    }
+
+                                }
+
+                                input[type="checkbox"]:checked + label {
+                                    border-color:transparent;
+                                    background:#555;
+                                    color:@white;
+
+                                    i {
+                                        .none;
+
+                                        @media all and (min-width: 1200px) {
+                                            .inline-block;
+                                            left:0;
+                                            top:0;
+                                            padding:0 5px;
+                                            margin:0 10px 0 0;
+                                            background:#5E7B00;
+                                            color:@white;
+                                        }
+                                    }
+
+                                }
+                                
+                                input[type="radio"] + label {
+                                    .inline-block;
+                                    .rem(font-size, 11);
+                                    border:1px solid #ccc;
+                                    border-left:none;
+                                    background:@white;
+                                    .center;
+                                    .rem(line-height, 30);
+                                    width:calc(~"100% / 3");
+                                    .pointer;
+
+                                    &:first-of-type {
+                                        border-left:1px solid #ccc;
+                                        .rem(border-radius, 10 0 0 10);
+                                    }
+
+                                    &:last-of-type {
+                                        .rem(border-radius, 0 10 10 0);
+                                    }
+
+                                    @media all and (min-width: 1200px) {
+                                        width:100px;
+                                        line-height:40px;
+                                        font-size:14px;
+                                    }
+
+
+                                }
+
+                                input[type="radio"]:checked + label {
+                                    border-color:transparent;
+                                    background:#555;
+                                    color:@white;
+                                }
+                                
+
+                                select {
+                                    .rem(height, 30);
+                                    width:100%;
+                                    .rem(font-size, 11);
+
+                                    @media all and (min-width: 1200px) {
+                                        width:200px;
+                                        height:40px;
+                                        font-size:14px;
+                                    }
+                                }
+
+                            }
+
+                        }
+
+                        button.submit {
+                            .remPlus(width, 40);
+                            .rem(margin, 0 -20);
+                            .rem(height, 35);
+                            border:none;
+                            background:#5E7B00;
+                            color:@white;
+
+                            @media all and (min-width: 1200px) {
+                                .block;
+                                width:220px;
+                                margin:20px auto;
+                                height:50px;
+                                font-size:17px;
+                                border-radius:25px;
+                            }
+                        }
+
+                    }
+
+                    div.chart {
+                        .rem(margin, 0 0 20);
+                        .rem(min-height, 200);
+
+                        @media all and (min-width: 1200px) {
+                            margin:0 0 30px;
+                        }
+                    }
+                }
+            }
+
+            section.sub-board-list {
+                .center;
+
+                .container {
+                    
+                }
+            }
         }
     }
 
@@ -2927,7 +3322,8 @@ body {
                 .rem(margin, 20 auto);
                 .rem(padding, 0 0 0 20);
                 
-                background:url("../images/phone.svg") no-repeat left center / auto 100%;
+                background:url("../images/phone.svg") no-repeat left center;
+                .rem(background-size, 12 32);
 
                 @media all and (min-width: 1200px) {
                     .absolute;
@@ -2935,6 +3331,7 @@ body {
                     top:20px;
                     width:140px;
                     padding:0 0 0 30px;
+                    background-size:23px 47px;
                 }
     
                 h3 {
