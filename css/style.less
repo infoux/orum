@@ -1144,7 +1144,7 @@ body {
     
 
                                 &::before {
-                                    margin:0;
+                                    .rem(margin, 0 4);
                                 }
                             }
 
@@ -1371,6 +1371,7 @@ body {
                     div.best {
                         .inline-block;
                         .absolute;
+                        z-index:1000;
                         left:50%;
                         .rem(top, 10);
                         background:rgba(255,255,255,0.6);
@@ -2817,6 +2818,7 @@ body {
 
                         @media all and (min-width: 1200px) {
                             .inline-block;
+                            .top;
                             width:736px;
                         }
 
@@ -2836,6 +2838,7 @@ body {
 
                         @media all and (min-width: 1200px) {
                             .inline-block;
+                            .top;
                             width:424px;
                             margin:0 0 0 40px;
                         }
@@ -2917,9 +2920,11 @@ body {
                                 top:0;
                                 .rem(width, 90);
                                 .rem(height, 90);
+                                background:@white;
                                 .mapazero;
                                 border-radius:50%;
                                 .hidden;
+                                .drop-shadow();
 
                                 @media all and (min-width: 1200px) {
                                     width:120px;
