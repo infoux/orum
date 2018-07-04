@@ -104,8 +104,8 @@
         <!-- S:mainContent -->
         <div id="content" class="sub">
             <section class="sub-image">
-                    <img  src="images/sub-image01.jpg">
-                    <h2 class="sub02">공지사항</h2>
+                <img  src="images/sub-image01.jpg">
+                <h2 class="sub04">경험공유</h2>
             </section>
             <aside class="sub-navigation">
                 <div class="container">
@@ -159,32 +159,60 @@
                     </ul>
                 </div>
             </aside>
-            <section class="sub-board-view">
+            <section class="sub-share-write">
                 <div class="container">
-                    <h3>공지사항</h3>
+                    <h3>경험공유하기</h3>
 
-                        <div class="board-head">
-                            <h4>공지사항 타이틀 영역 입니다.</h4>
+                        <ul class="board-head">
+                            <li class="half">
+                                <label for="title">오름명</label><input id="title" class="btns" type="text" list="text-list" placeholder="오름명을 입력하세요">
+                                
+                                <datalist id="text-list">
+                                    <option value="야옹이오름">야옹이오름</option>
+                                    <option value="멍멍이오름">멍멍이오름</option>
+                                    <option value="꿀꿀이오름">꿀꿀이오름</option>
+                                </datalist>
+                                        
+                                <button><i class="icon-search"></i>검색</button>
+                            </li>
+                            <li class="half">
+                                <label for="name">사용자명</label><input id="name" type="text" placeholder="이름을 입력하세요">
+                            </li>
 
-                            <ul>
-                                <li>2017-01-12</li>
-                                <li>조회수 24</li>
-                            </ul>
-                        </div>
+                            <li class="half">
+                                <label for="date">등록일</label><input id="date" type="text" placeholder="등록일자를 선택하세요">
+
+                                        
+                            </li>
+                            <li class="half">
+                                <h4>별점</h4>
+                                <div>
+                                    <i class="icon-star on"></i>
+                                    <i class="icon-star on"></i>
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                    <i class="icon-star"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <input id="check" type="checkbox"><label for="check"><i class="icon-angle-down"></i>경험공유에도 함께 등록하겠습니다.</label>
+                            </li>
+                        </ul>
                         <div class="text">
                             
-                            <img src="images/main-issue01.jpg" alt="">
-                            공지사항 본문영역 입니다. 공지사항 본문영역 입니다. 공지사항 본문영역 입니다. 공지사항 본문영역 입니다. 공지사항 본문영역 입니다. 공지사항
-                            본문영역 입니다. ㅍ 공지사항 본문영역 입니다. 공지사항 본문영역 입니다. 공지사항 본문영역 입니다.
-                            
+                            <textarea placeholder="본문을 입력하세요"></textarea>
                         </div>
-
+                        <div class="file">
+                            <h4>사진첨부</h4>
+                            <button>파일선택</button>
+                            <button>파일선택</button>
+                            <button>파일선택</button>
+                            <button>파일선택</button>
+                            <button>파일선택</button>
+                        </div>
                         <div class="btn-area">
                             <a href="">리스트</a>
-                            <a href="">수정</a>
-                            <a href="">삭제</a>
-
-                            <a class="right main" href="">글쓰기</a>
+                            <a class="right main" href="">작성완료</a>
                         </div>
 
                 </section>

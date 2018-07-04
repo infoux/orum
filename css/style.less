@@ -420,6 +420,63 @@ body {
 
 
 
+ul.my-tab {
+    .relative;
+    .mapazero;
+    .zero;
+
+    li {
+        .inline-block;
+        width:calc(~"100% / 2");
+
+        border-left:1px solid #ccc;
+        border-top:1px solid #ccc;
+        border-bottom: 1px solid #5E7B00;
+
+
+        a {
+            .block;
+            .rem(line-height, 36);
+            .rem(font-size, 11);
+            .center;
+
+            @media all and (min-width: 1200px) {
+                line-height:50px;
+                font-size:17px;
+            }
+
+
+            i {
+                font-style:normal;
+            }
+        }
+
+
+
+
+        &:last-child {
+            border-right:1px solid #ccc;
+        }
+
+        &.on {
+            background:@white;
+            border-color:#5E7B00;
+            border-bottom-color:transparent;
+            color:#5E7B00;
+
+            a {
+                color:#5E7B00;
+
+            }
+
+        }
+
+        &.on + li {
+            border-left-color:#5E7B00;
+        }
+    }
+}
+
 #ui-datepicker-div {
     background:@white;
     .rem(padding, 10);
@@ -1560,9 +1617,11 @@ body {
                     height:354px;
                 }
 
-                &.sub01 {
-                    background:url("../images/sub-image01.jpg") no-repeat center / cover;
+                img {
+                    .none;
                 }
+
+
 
                 h2 {
                     .inline-block;
@@ -1570,13 +1629,56 @@ body {
                     z-index:10;
                     .mapazero;
                     .zero;
-                    .rem(width, 78);
-                    .rem(height, 23);
-                    background:url("../images/title01.svg") no-repeat center / 100% 100%;
 
-                    @media all and (min-width: 1200px) {
-                        width:174px;
-                        height:50px;
+                    &.sub01 {
+                        .rem(width, 78);
+                        .rem(height, 23);
+                        background:url("../images/title01.svg") no-repeat center / 100% 100%;
+    
+                        @media all and (min-width: 1200px) {
+                            width:174px;
+                            height:50px;
+                        }
+                    }
+                    &.sub02 {
+                        .rem(width, 78);
+                        .rem(height, 23);
+                        background:url("../images/title02.svg") no-repeat center / 100% 100%;
+    
+                        @media all and (min-width: 1200px) {
+                            width:174px;
+                            height:50px;
+                        }
+                    }
+                    &.sub03 {
+                        .rem(width, 78);
+                        .rem(height, 23);
+                        background:url("../images/title03.svg") no-repeat center / 100% 100%;
+    
+                        @media all and (min-width: 1200px) {
+                            width:174px;
+                            height:50px;
+                        }
+                    }
+                    &.sub04 {
+                        .rem(width, 78);
+                        .rem(height, 23);
+                        background:url("../images/title04.svg") no-repeat center / 100% 100%;
+    
+                        @media all and (min-width: 1200px) {
+                            width:174px;
+                            height:50px;
+                        }
+                    }
+                    &.sub05 {
+                        .rem(width, 95);
+                        .rem(height, 23);
+                        background:url("../images/title05.svg") no-repeat center / 100% 100%;
+    
+                        @media all and (min-width: 1200px) {
+                            width:217px;
+                            height:50px;
+                        }
                     }
                 }
             }
@@ -3819,6 +3921,1145 @@ body {
 
                 }
             }
+
+            section.sub-share-list {
+                .center;
+
+                .container {
+                    .center;
+
+
+                    h3 {
+                        .center;
+                        .rem(font-size, 20);
+                        .rem(margin, 30 0 10);
+
+                        @media all and (min-width: 1200px) {
+                            font-size:36px;
+                            margin:40px 0 30px;
+                        }
+                    }
+
+                    fieldset.search {
+                        border:none;
+                        background:#f4f4f4;
+                        .rem(padding, 20 20 10);
+                        .rem(margin, 20 0);
+                        .relative;
+                        .left;
+
+                        @media all and (min-width: 1200px) {
+                            margin:30px 0;
+                        }
+
+                        ul {
+                            .inline-block;
+                            .mapazero;
+                            .no-list;
+                            .zero;
+                            width:100%;
+
+    
+
+                            li {
+                                .inline-block;
+                                .top;
+                                width:100%;
+                                .rem(margin-bottom, 20);
+
+                                @media all and (min-width: 1200px) {
+                                    margin-bottom:10px;
+                                    .center;
+
+                                    &.half {
+                                        width:50%;
+                                    }
+
+                                }
+                                h4 {
+                                    .top;
+                                    .rem(margin, 0 0 10);
+                                    .rem(width, 70);
+                                    .rem(font-size, 11);
+                                    
+                                    @media all and (min-width: 1200px) {
+                                        .inline-block;
+                                        width:160px;
+                                        line-height:40px;
+                                        font-size:17px;
+                                    }
+                                }
+                                span {
+                                    .inline-block;
+                                    .rem(line-height, 30);
+                                    .top;
+                                    .rem(font-size, 12);
+                                    width:40px;
+                                    .center;
+
+                                    @media all and (min-width: 1200px) {
+                                        line-height:40px;
+                                        font-size:17px;
+                                    }
+                                }
+                                input[type="text"] {
+                                    .top;
+                                    .rem(font-size, 11);
+                                    .rem(height, 30);
+                                    .rem(padding, 0 10);
+                                    border:none;
+                                    width:calc(~"50% - 20px");
+                                    
+                                    @media all and (min-width: 1200px) {
+                                        height:40px;
+                                        font-size:17px;
+                                        width:180px;
+                                    }
+                                }
+                                button {
+                                    .rem(height, 30);
+                                    .rem(width, 50);
+                                    border:none;
+                                    .mapazero;
+                                    background:#5E7B00;
+                                    color:@white;
+                                    .pointer;
+
+                                    @media all and (min-width: 1200px) {
+                                        height:40px;
+                                    }
+
+                                    i {
+                                        .rem(font-size, 14);
+
+                                        @media all and (min-width: 1200px) {
+                                            font-size:20px;
+                                        }
+                                    }
+                                }
+
+                                &.text {
+                                    input[type="text"] {
+
+
+                                        @media all and (min-width: 1200px) {
+                                            width:260px;
+                                        }
+                                    }
+                                }
+
+
+
+                            }
+
+                        }
+
+                        button.submit {
+                            .remPlus(width, 40);
+                            .rem(margin, 0 -20);
+                            .rem(height, 35);
+                            border:none;
+                            background:#5E7B00;
+                            color:@white;
+
+                            @media all and (min-width: 1200px) {
+                                .block;
+                                width:220px;
+                                margin:20px auto;
+                                height:50px;
+                                font-size:17px;
+                                border-radius:25px;
+                            }
+                        }
+
+                    }
+                    ul.list {
+                        .no-list;
+
+                        padding:0;
+                        .rem(margin, 0 0 20);
+                        border-top:2px solid #5E7B00;
+
+                        &>li {
+                            .relative;
+                            border-bottom:1px solid #ccc;
+
+
+                            a {
+                                .block;
+                                height:100%;
+                                .rem(padding, 20 0 0);
+
+                                @media all and (min-width: 1200px) {
+                                    .left;
+                                    padding:20px 0 20px 230px;
+                                    min-height:165px;
+                                }
+
+                                p.image {
+                                    margin:0;
+
+                                    @media all and (min-width: 1200px) {
+                                        .absolute;
+                                        left:0;
+                                        top:20px;
+                                        width:200px;
+                                        height:120px;
+                                        .hidden;
+
+                                        img {
+                                            min-width:200px;
+                                            min-height:120px;
+                                        }
+                                    }
+
+
+                                    img {
+                                        max-width:100%;
+                                    }
+                                }
+
+                                h4 {
+                                    .rem(font-size, 15);
+                                    .rem(margin, 10 0);
+                                    line-height:1.6;
+                                    
+                                    @media all and (min-width: 1200px) {
+                                        font-size:22px;
+                                        margin:0 0 20px;
+                                    }
+
+                                    small {
+                                        .block;
+                                        .rem(font-size, 12);
+                                        .normal;
+                                        color:#5E7B00;
+                                    
+                                        @media all and (min-width: 1200px) {
+                                            .inline-block;
+                                            margin:0 0 0 10px;
+                                            font-size:14px;
+                                        }
+                                    }
+                                }
+
+                                p.text {
+                                    .rem(margin, 0 0 10);
+                                    .rem(font-size, 12);
+                                    
+                                    @media all and (min-width: 1200px) {
+                                        font-size:14px;
+                                    }
+
+                                }
+
+                                p.date {
+                                    .rem(margin, 0 0 16);
+                                    .rem(font-size, 10);
+                                    color:#555;
+                                    .bold;
+
+                                    @media all and (min-width: 1200px) {
+                                        .absolute;
+                                        right:0;
+                                        top:30px;
+                                        font-size:17px;
+                                    }
+                                    
+                                }
+                            }
+
+
+                            div.link-set {
+                                .zero;
+                                .rem(margin, 20 0);
+
+                                @media all and (min-width: 1200px) {
+                                    .absolute;
+                                    right:0;
+                                    bottom:20px;
+                                    width:296px;
+                                }
+
+
+                                button {
+                                    .inline-block;
+                                    .rem(font-size, 12);
+                                    .rem(height, 30);
+                                    border:1px solid #ccc;
+                                    width:calc(~"(100% - 10px) / 2");
+                                    background:@white;
+                                    
+                                    @media all and (min-width: 1200px) {
+                                        height:46px;
+                                        font-size:17px;
+                                        .center;
+                                    }
+
+
+                                    &:first-child {
+                                        margin-right:10px;
+                                    }
+
+                                    i {
+                                        color:#5E7B00;
+                                        .rem(margin-right, 4);
+                                    }
+                                }
+                            }
+
+                        }
+
+                    }
+
+                    div.btn-area {
+                        .relative;
+                        .rem(padding, 10 0 0);
+                        .rem(min-height, 40);
+
+                        @media all and (min-width: 1200px) {
+                            padding:20px 0 0;
+                            min-height:60px;
+                        }
+
+                        a {
+                            .inline-block;
+                            .rem(height, 30);
+                            .rem(line-height, 30);
+                            .rem(padding, 0 20);
+                            border:1px solid #ccc;
+                            .rem(font-size, 12);
+
+                            @media all and (min-width: 1200px) {
+                                height:40px;
+                                line-height:40px;
+                                font-size:17px;
+                            }
+    
+
+                            &.right {
+                                .absolute;
+                                right:0;
+                                .rem(top, 10);
+
+                                @media all and (min-width: 1200px) {
+                                    top:20px;
+                                }
+                            }
+
+                            &.main {
+                                background:#5E7B00;
+                                color:@white;
+                                border-color:transparent;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            section.sub-share-view {
+                .center;
+
+                .container {
+    
+                    h3 {
+                        .center;
+                        .rem(font-size, 20);
+                        .rem(margin, 30 0 10);
+
+                        @media all and (min-width: 1200px) {
+                            font-size:36px;
+                            margin:40px 0 30px;
+                        }
+                    }
+
+                    div.board-head {
+                        border-top:2px solid #5E7B00;
+                        border-bottom:1px solid #eee;
+                        .rem(padding, 20 0);
+                        .center;
+
+                        @media all and (min-width: 1200px) {
+                            padding:30px 0;
+                        }
+
+                        h4 {
+                            .rem(margin, 0 0 6);
+                            .rem(font-size, 14);
+                            line-height:1.6;
+
+                            @media all and (min-width: 1200px) {
+                                font-size:24px;
+                                margin:0 0 10px;
+                            }
+                        }
+
+                        ul {
+                            .mapazero;
+                            .no-list;
+
+                            li {
+                                .inline-block;
+                                .rem(margin, 6 6 0);
+                                .rem(font-size, 14);
+
+                                @media all and (min-width: 1200px) {
+                                    font-size:17px;
+                                }
+
+                                &.name {
+                                    .bold;
+                                    color:#5E7B00;
+                                }
+
+
+                                i.icon-star {
+                                    .rem(font-size, 16);
+                                    color:#ccc;
+
+                                    @media all and (min-width: 1200px) {
+                                        font-size:20px;
+                                    }
+
+                                    &.on {
+                                        color:#FF9300;
+                                    }
+
+                                    &::before {
+                                        margin:0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    div.text {
+                        .rem(padding, 20 10);
+                        .rem(font-size, 12);
+                        line-height:1.6;
+                        border-bottom:1px solid #ccc;
+
+                        @media all and (min-width: 1200px) {
+                            font-size:15px;
+                        }
+
+                        div.images {
+                            background:#eee;
+                            .rem(padding, 20);
+                            .zero;
+                            .rem(margin, 0 0 20);
+                            
+                            img {
+                                width:100%;
+                                border:none;
+                            }
+
+
+                            &.num01 {
+                                a {
+                                    .inline-block;
+                                    width:100%;
+                                    margin-right:10px;
+                                }
+                            }
+
+                            &.num02 {
+                                a {
+                                    .inline-block;
+                                    width:calc(~"(100% - 10px) / 2");
+                                    margin-right:10px;
+
+                                    &:last-of-type {
+                                        margin:0;
+                                    }
+                                }
+                            }
+
+                            &.num03 {
+                                a {
+                                    .inline-block;
+                                    width:calc(~"(100% - 20px) / 3");
+                                    margin-right:10px;
+
+                                    &:last-of-type {
+                                        margin:0;
+                                    }
+                                }
+                            }
+
+                            &.num04 {
+                                a {
+                                    .inline-block;
+                                    width:calc(~"(100% - 30px) / 4");
+                                    margin-right:10px;
+
+                                    &:last-of-type {
+                                        margin:0;
+                                    }
+                                }
+                            }
+
+                            &.num05 {
+                                a {
+                                    .inline-block;
+                                    width:calc(~"(100% - 40px) / 5");
+                                    margin-right:10px;
+
+                                    &:last-of-type {
+                                        margin:0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+
+
+
+
+                    div.btn-area {
+                        .relative;
+                        .rem(padding, 10 0 30);
+                        .rem(min-height, 40);
+
+                        @media all and (min-width: 1200px) {
+                            padding:20px 0 40px;
+                            min-height:60px;
+                        }
+
+                        a {
+                            .inline-block;
+                            .rem(height, 30);
+                            .rem(line-height, 30);
+                            .rem(padding, 0 10);
+                            border:1px solid #ccc;
+                            .rem(font-size, 12);
+
+                            @media all and (min-width: 1200px) {
+                                height:40px;
+                                line-height:40px;
+                                font-size:17px;
+                            }
+    
+
+                            &.right {
+                                .absolute;
+                                right:0;
+                                .rem(top, 10);
+
+                                @media all and (min-width: 1200px) {
+                                    top:20px;
+                                }
+                            }
+
+                            &.main {
+                                background:#5E7B00;
+                                color:@white;
+                                border-color:transparent;
+                                .rem(padding, 0 20);
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            section.sub-share-write {
+                .center;
+
+                .container {
+    
+                    h3 {
+                        .center;
+                        .rem(font-size, 20);
+                        .rem(margin, 30 0 10);
+
+                        @media all and (min-width: 1200px) {
+                            font-size:36px;
+                            margin:40px 0 30px;
+                        }
+                    }
+
+                    ul.board-head {
+                        .no-list;
+                        .zero;
+                        .mapazero;
+                        border-top:2px solid #5E7B00;
+
+
+                        li {
+                            .top;
+                            .rem(padding, 10);
+                            border-bottom:1px solid #eee;
+
+                            label,
+                            h4 {
+                                .inline-block;
+                                .normal;
+                                .mapazero;
+                                .top;
+                                .rem(font-size, 12);
+                                .rem(width, 60);
+                                .rem(line-height, 30);
+
+                                @media all and (min-width: 1200px) {
+                                    width:110px;
+                                    font-size:15px;
+                                    line-height:40px;
+                                }
+
+                            }
+
+
+                            input[type="text"] {
+                                .rem(height, 30);
+                                .rem(padding, 0 10);
+                                .remCalc(width, 60);
+                                border:1px solid #ccc;
+                                .rem(font-size, 12);
+
+                                &.btns {
+                                    .remCalc(width, 100);
+                                }
+
+                                @media all and (min-width: 1200px) {
+                                    width:320PX;
+                                    font-size:15px;
+                                    height:40px;
+
+                                    &.btns {
+                                        width:280px;
+                                    }
+                                }
+                            }
+
+                            button {
+                                .rem(width, 40);
+                                .mapazero;
+                                .top;
+                                .rem(height, 30);
+                                border:none;
+                                background:#5E7B00;
+
+                                @media all and (min-width: 1200px) {
+                                    height:40px;
+                                }
+
+                                i {
+                                    .relative;
+                                    color:@white;
+                                    .rem(top, -2);
+                                    .rem(font-size, 16);
+                                }
+                            }
+
+                            div {
+                                .inline-block;
+                                .top;
+                                .rem(height, 30);
+                                .rem(line-height, 30);
+
+                                @media all and (min-width: 1200px) {
+                                    height:40px;
+                                    line-height:40px;
+                                }
+
+                                i.icon-star {
+                                    .rem(font-size, 16);
+                                    color:#ccc;
+
+                                    @media all and (min-width: 1200px) {
+                                        font-size:20px;
+                                    }
+
+                                    &.on {
+                                        color:#FF9300;
+                                    }
+
+                                    &::before {
+                                        margin:0;
+                                    }
+                                }
+                            }
+
+                            input[type="checkbox"] {
+                                .none;
+                            }
+                                
+                            input[type="checkbox"] + label {
+                                .relative;
+                                border:none;
+                                width:auto;
+                                .hidden;
+                                .rem(font-size, 12);
+                                .rem(line-height, 26);
+                                .rem(padding, 0 20 0 0);
+                            
+                                @media all and (min-width: 1200px) {
+                                    font-size:17px;
+                                    margin:10px 0;
+                                }
+
+                                i {
+                                    .inline-block;
+                                    left:0;
+                                    top:0;
+                                    .rem(padding, 0 5);
+                                    .rem(margin, 0 10 0 0);
+                                    background:#ccc;
+                                    color:#999;
+
+                                }
+
+                            }
+
+                            input[type="checkbox"]:checked + label {
+                                border-color:transparent;
+                                background:#eee;
+
+                                i {
+                                    background:#5E7B00;
+                                    color:@white;
+                                }
+
+                            }
+                            
+
+                            @media all and (min-width: 1200px) {
+                                &.half {
+                                    .inline-block;
+                                    width:50%;
+                                }
+                            }
+                        }
+
+                    }
+
+                    div.text {
+                        line-height:1.6;
+                        border-bottom:1px solid #ccc;
+
+                        textarea {
+                            width:100%;
+                            .rem(min-height, 160);
+                            border:none;
+                            .rem(padding, 10);
+                            .rem(font-size, 12);
+
+                            @media all and (min-width: 1200px) {
+                                min-height: 260px;
+                                padding: 20px;
+                                font-size:15px;
+                            }
+                        }
+
+                    }
+
+                    div.file {
+                        .rem(padding, 10 0);
+                        .rem(margin, 0);
+                        .no-list;
+                        border-bottom:1px solid #ccc;
+
+                        @media all and (min-width: 1200px) {
+                            padding:20px;
+                        }
+
+                        h4 {
+                            .rem(margin, 0 0 6);
+                            .normal;
+                            .rem(font-size, 11);
+
+                            @media all and (min-width: 1200px) {
+                                font-size:16px;
+                                margin:0 0 10px;
+                            }
+                        }
+
+                        button {
+                            border:none;
+                            .rem(width, 40);
+                            .rem(height, 40);
+                            .zero;
+                            background:url("../images/icon-add.svg") no-repeat #ccc center / 60% 60%;
+
+                            @media all and (min-width: 1200px) {
+                                width:80px;
+                                height:80px;
+                                margin-right:2px;
+                            }
+                        }
+                    }
+
+
+
+
+
+
+                    div.btn-area {
+                        .relative;
+                        .rem(padding, 10 0 30);
+                        .rem(min-height, 40);
+
+                        @media all and (min-width: 1200px) {
+                            padding:20px 0 40px;
+                            min-height:60px;
+                        }
+
+                        a {
+                            .inline-block;
+                            .rem(height, 30);
+                            .rem(line-height, 30);
+                            .rem(padding, 0 10);
+                            border:1px solid #ccc;
+                            .rem(font-size, 12);
+
+                            @media all and (min-width: 1200px) {
+                                height:40px;
+                                line-height:40px;
+                                font-size:17px;
+                            }
+    
+
+                            &.right {
+                                .absolute;
+                                right:0;
+                                .rem(top, 10);
+
+                                @media all and (min-width: 1200px) {
+                                    top:20px;
+                                }
+                            }
+
+                            &.main {
+                                background:#5E7B00;
+                                color:@white;
+                                border-color:transparent;
+                                .rem(padding, 0 20);
+                            }
+                        }
+                    }
+
+                }
+            }
+
+
+            section.sub-visit-list {
+                .center;
+
+                .container {
+                    .center;
+
+                    h3 {
+                        .center;
+                        .rem(font-size, 20);
+                        .rem(margin, 30 0 20);
+
+                        @media all and (min-width: 1200px) {
+                            font-size:36px;
+                            margin:40px 0 30px;
+                        }
+                    }
+
+        
+
+
+                    fieldset.search {
+                        border:none;
+                        background:#f4f4f4;
+                        .rem(padding, 20 20 10);
+                        .rem(margin, 20 0);
+                        .relative;
+                        .left;
+
+                        @media all and (min-width: 1200px) {
+                            margin:30px 0;
+                        }
+
+                        ul {
+                            .inline-block;
+                            .mapazero;
+                            .no-list;
+                            .zero;
+                            width:100%;
+
+    
+
+                            li {
+                                .inline-block;
+                                .top;
+                                width:100%;
+                                .rem(margin-bottom, 20);
+
+                                @media all and (min-width: 1200px) {
+                                    margin-bottom:10px;
+                                    .center;
+
+                                    &.half {
+                                        width:50%;
+                                    }
+
+                                }
+                                h4 {
+                                    .top;
+                                    .rem(margin, 0 0 10);
+                                    .rem(width, 70);
+                                    .rem(font-size, 11);
+                                    
+                                    @media all and (min-width: 1200px) {
+                                        .inline-block;
+                                        width:160px;
+                                        line-height:40px;
+                                        font-size:17px;
+                                    }
+                                }
+                                span {
+                                    .inline-block;
+                                    .rem(line-height, 30);
+                                    .top;
+                                    .rem(font-size, 12);
+                                    width:40px;
+                                    .center;
+
+                                    @media all and (min-width: 1200px) {
+                                        line-height:40px;
+                                        font-size:17px;
+                                    }
+                                }
+                                input[type="text"] {
+                                    .top;
+                                    .rem(font-size, 11);
+                                    .rem(height, 30);
+                                    .rem(padding, 0 10);
+                                    border:none;
+                                    width:calc(~"50% - 20px");
+                                    
+                                    @media all and (min-width: 1200px) {
+                                        height:40px;
+                                        font-size:17px;
+                                        width:180px;
+                                    }
+                                }
+                                button {
+                                    .rem(height, 30);
+                                    .rem(width, 50);
+                                    border:none;
+                                    .mapazero;
+                                    background:#5E7B00;
+                                    color:@white;
+                                    .pointer;
+
+                                    @media all and (min-width: 1200px) {
+                                        height:40px;
+                                    }
+
+                                    i {
+                                        .rem(font-size, 14);
+
+                                        @media all and (min-width: 1200px) {
+                                            font-size:20px;
+                                        }
+                                    }
+                                }
+
+                                &.text {
+                                    input[type="text"] {
+
+
+                                        @media all and (min-width: 1200px) {
+                                            width:260px;
+                                        }
+                                    }
+                                }
+
+
+
+                            }
+
+                        }
+
+                        button.submit {
+                            .remPlus(width, 40);
+                            .rem(margin, 0 -20);
+                            .rem(height, 35);
+                            border:none;
+                            background:#5E7B00;
+                            color:@white;
+
+                            @media all and (min-width: 1200px) {
+                                .block;
+                                width:220px;
+                                margin:20px auto;
+                                height:50px;
+                                font-size:17px;
+                                border-radius:25px;
+                            }
+                        }
+
+                    }
+                    ul.list {
+                        .no-list;
+
+                        padding:0;
+                        .rem(margin, 0 0 20);
+                        border-top:2px solid #5E7B00;
+
+                        &>li {
+                            .relative;
+                            border-bottom:1px solid #ccc;
+                            .left;
+                            .rem(padding, 20 0);
+
+                            @media all and (min-width: 1200px) {
+                                min-height:140px;
+                                padding:20px 10px;
+                            }
+
+                                p.image {
+                                    margin:0;
+
+                                    @media all and (min-width: 1200px) {
+                                        .absolute;
+                                        left:0;
+                                        top:20px;
+                                        width:200px;
+                                        height:120px;
+                                        .hidden;
+
+                                        img {
+                                            min-width:200px;
+                                            min-height:120px;
+                                        }
+                                    }
+
+
+                                    img {
+                                        max-width:100%;
+                                    }
+                                }
+
+                                h4 {
+                                    .rem(font-size, 15);
+                                    .rem(margin, 0 0 10);
+                                    line-height:1.6;
+                                    
+                                    @media all and (min-width: 1200px) {
+                                        font-size:22px;
+                                        margin:0 0 20px;
+                                    }
+
+                                    small {
+                                        .inline-block;
+                                        .rem(margin, 0 0 0 10px);
+                                        .rem(font-size, 12);
+                                        .normal;
+                                        color:#5E7B00;
+                                    
+                                        @media all and (min-width: 1200px) {
+                                            font-size:14px;
+                                        }
+                                    }
+                                }
+
+                                p.text {
+                                    .rem(margin, 0 0 10);
+                                    .rem(font-size, 12);
+                                    
+                                    @media all and (min-width: 1200px) {
+                                        font-size:14px;
+                                    }
+
+                                }
+
+                                p.date {
+                                    .rem(margin, 0 0 16);
+                                    .rem(font-size, 10);
+                                    color:#555;
+                                    .bold;
+
+                                    @media all and (min-width: 1200px) {
+                                        .absolute;
+                                        right:10px;
+                                        top:30px;
+                                        font-size:17px;
+                                    }
+                                    
+
+                                }
+
+                                div.link-set {
+                                    .zero;
+                                    .rem(margin, 20 0 0);
+    
+                                    @media all and (min-width: 1200px) {
+                                        .absolute;
+                                        right:10px;
+                                        bottom:20px;
+                                    }
+    
+    
+                                    a {
+                                        .center;
+                                        .top;
+                                        .inline-block;
+                                        .rem(font-size, 12);
+                                        .rem(line-height, 30);
+                                        border:1px solid #ccc;
+                                        width:calc(~"(100% - 10px) / 2");
+                                        
+                                        @media all and (min-width: 1200px) {
+                                            width:auto;
+                                            padding:0 20px;
+                                            line-height:46px;
+                                            font-size:17px;
+                                            .center;
+                                        }
+
+    
+                                        &:first-child {
+                                            margin-right:10px;
+                                        }
+    
+                                        i {
+                                            color:#5E7B00;
+                                            .rem(margin-right, 4);
+                                        }
+
+
+                                        &.ok {
+                                            .ellipse;
+                                            background:#eee;
+                                            color:#666;
+
+                                            i {
+                                                color:#ccc;
+                                            }
+                                        }
+    
+
+                                    }
+                                }
+
+
+                        }
+
+                    }
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
 
         }
     }

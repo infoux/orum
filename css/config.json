@@ -225,6 +225,30 @@
       "css": "attach",
       "code": 59410,
       "src": "entypo"
+    },
+    {
+      "uid": "413717f5ea649e8d8b93938be277264a",
+      "css": "calendar",
+      "code": 59411,
+      "src": "entypo"
+    },
+    {
+      "uid": "91426c82d94428a33353e495418435e3",
+      "css": "share",
+      "code": 59412,
+      "src": "entypo"
+    },
+    {
+      "uid": "f48ae54adfb27d8ada53d0fd9e34ee10",
+      "css": "trash-empty",
+      "code": 59413,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "41087bc74d4b20b55059c60a33bf4008",
+      "css": "edit",
+      "code": 59414,
+      "src": "fontawesome"
     }
   ]
 }

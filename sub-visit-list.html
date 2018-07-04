@@ -85,9 +85,9 @@
         <!-- E:header -->
         <!-- S:mainContent -->
         <div id="content" class="sub">
-            <section class="sub-image">
+             <section class="sub-image">
                 <img  src="images/sub-image01.jpg">
-                <h2 class="sub02">공지사항</h2>
+                <h2 class="sub05">마이페이지</h2>
             </section>
             <aside class="sub-navigation">
                     <div class="container">
@@ -117,141 +117,117 @@
                         </ul>
                     </div>
             </aside>
-            <section class="sub-board-list">
+
+
+            <section class="sub-visit-list">
                 <div class="container">
-                <h3>공지사항</h3>
+                    <h3>마이페이지</h3>
 
+                    <ul class="my-tab">
+                            <li class="on"><a href="">방문이력</a></li>
+                            <li><a href="">경험공유내역</a></li>
+                        </ul>
 
-                <fieldset>
-                    <legend class="sr-only">게시물 검색</legend>
-                    <label for="category" class="sr-only">유형 선택</label>
-                    <select id="category">
-                        <option>전체</option>
-                    </select>
-                    <label for="keyword" class="sr-only">검색어</label>
-                    <input id="keyword" type="text" placeholder="검색어를입력하세요">
-                    <button><i class="icon-search"></i>검색</button>
-                    </fieldset>
-                <ul class="list">
-                    <li>
-                        <a href="">
-                            <h4>
-                                <small class="event">행사</small>
-                                제주여행, 간직하고 싶은 추억의 사진 스토리 공모
-                                <i class="icon-attach"></i>
-                            </h4>
-
+                    <fieldset class="search">
+                            <legend class="sr-only">현황조회</legend>
+        
                             <ul>
-                                <li>2017-01-12</li>
-                                <li>조회수 24</li>
+        
+        
+                                <li class="half">
+                                    <h4>기간</h4>
+                                    
+                                    <label for="day-start" class="sr-only">시작일</label>
+                                    <input id="day-start" type="text" placeholder="시작일">
+                                    <span>~</span>
+                                    <label for="day-end" class="sr-only">종료일</label>
+                                    <input id="day-end" type="text" placeholder="종료일">
+        
+                                </li>
+
+        
+                                <li class="half text">
+                                        <h4>
+                                            <label for="text">오름검색</label>
+                                        </h4>
+    
+                                        <input id="text" type="text" list="text-list" placeholder="오름검색">
+                                        <datalist id="text-list">
+                                            <option value="야옹이오름">야옹이오름</option>
+                                            <option value="멍멍이오름">멍멍이오름</option>
+                                            <option value="꿀꿀이오름">꿀꿀이오름</option>
+                                        </datalist>
+
+                                        <button><i class="icon-search"></i>검색</button>
+                                    </li>
                             </ul>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <h4>
-                                <small class="notice">공지</small>
-                                제주여행, 간직하고 싶은 추억의 사진 스토리 공모
-                                <i class="icon-attach"></i>
-                            </h4>
+        
+                        </fieldset>
 
-                            <ul>
-                                <li>2017-01-12</li>
-                                <li>조회수 24</li>
-                            </ul>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <h4>
-                                <small class="event">행사</small>
-                                제주여행, 간직하고 싶은 추억의 사진 스토리 공모
-                                <i class="icon-attach"></i>
-                            </h4>
 
-                            <ul>
-                                <li>2017-01-12</li>
-                                <li>조회수 24</li>
-                            </ul>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <h4>
-                                <small class="notice">공지</small>
-                                제주여행, 간직하고 싶은 추억의 사진 스토리 공모
-                                <i class="icon-attach"></i>
-                            </h4>
+                    <ul class="list">
+                        <li>
+                                <h4>양진혁<small>다랑쉬오름</small></h4>
+                                <p class="text">
+                                    너무 좋아요, 너무 높고 힘들고 덥고, 웃음이 멈추지 않네요 좋은경험이 되었습니다.
+                                </p>
 
-                            <ul>
-                                <li>2017-01-12</li>
-                                <li>조회수 24</li>
-                            </ul>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <h4>
-                                <small class="notice">공지</small>
-                                제주여행, 간직하고 싶은 추억의 사진 스토리 공모
+                                <p class="date">
+                                    2018년 4월 12일
+                                </p>
 
-                            </h4>
+                                <div class="link-set">
+                                    <a href=""><i class="icon-share"></i>경험공유하기</a>
+                                    <a href=""><i class="icon-desktop"></i>상세보기</a>
+                                </div>
+                        </li>
+                        <li>
+                                <h4>양진혁<small>다랑쉬오름</small></h4>
+                                <p class="text">
+                                    너무 좋아요, 너무 높고 힘들고 덥고, 웃음이 멈추지 않네요 좋은경험이 되었습니다.
+                                </p>
 
-                            <ul>
-                                <li>2017-01-12</li>
-                                <li>조회수 24</li>
-                            </ul>
-                        </a>
-                    </li>
+                                <p class="date">
+                                    2018년 4월 12일
+                                </p>
 
-                    <li>
-                        <a href="">
-                            <h4>
-                                <small class="notice">공지</small>
-                                제주여행, 간직하고 싶은 추억의 사진 스토리 공모
+                                <div class="link-set">
+                                    <a class="ok" href="#"><i class="icon-share"></i>경험공유완료 2018.05.01.</a>
+                                    <a href=""><i class="icon-desktop"></i>상세보기</a>
+                                </div>
+                        </li>
+                        <li>
+                                <h4>양진혁<small>다랑쉬오름</small></h4>
+                                <p class="text">
+                                    너무 좋아요, 너무 높고 힘들고 덥고, 웃음이 멈추지 않네요 좋은경험이 되었습니다.
+                                </p>
 
-                            </h4>
+                                <p class="date">
+                                    2018년 4월 12일
+                                </p>
 
-                            <ul>
-                                <li>2017-01-12</li>
-                                <li>조회수 24</li>
-                            </ul>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <h4>
-                                <small class="notice">공지</small>
-                                제주여행, 간직하고 싶은 추억의 사진 스토리 공모
+                                <div class="link-set">
+                                    <a href=""><i class="icon-share"></i>경험공유하기</a>
+                                    <a href=""><i class="icon-desktop"></i>상세보기</a>
+                                </div>
+                        </li>
 
-                            </h4>
 
-                            <ul>
-                                <li>2017-01-12</li>
-                                <li>조회수 24</li>
-                            </ul>
-                        </a>
-                    </li>
+                    </ul>
 
-                </ul>
+                    <div class="pagenation">
+                        <a class="move" href="">이전<i class="icon-angle-left" aria-hidden="true"></i></a>
+                        <a href="">1</a>
+                        <a href="">2</a>
+                        <strong>3</strong>
+                        <a href="">4</a>
+                        <a href="">5</a>
+                        <a class="move" href="">다음<i class="icon-angle-right" aria-hidden="true"></i></a>
+                    </div>
 
-                <div class="btn-area">
-                    <a class="right main" href="">글쓰기</a>
-                </div>
-
-                <div class="pagenation">
-                    <a class="move" href="">이전<i class="icon-angle-left" aria-hidden="true"></i></a>
-                    <a href="">1</a>
-                    <a href="">2</a>
-                    <strong>3</strong>
-                    <a href="">4</a>
-                    <a href="">5</a>
-                    <a class="move" href="">다음<i class="icon-angle-right" aria-hidden="true"></i></a>
-                </div>
-
+                    
                 </div>
             </section>
-
 
         </div>
         <!-- E:mainContent -->
