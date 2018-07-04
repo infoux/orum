@@ -3271,9 +3271,472 @@ body {
                 .center;
 
                 .container {
-                    
+    
+                    h3 {
+                        .center;
+                        .rem(font-size, 20);
+                        .rem(margin, 30 0 10);
+
+                        @media all and (min-width: 1200px) {
+                            font-size:36px;
+                            margin:40px 0 30px;
+                        }
+                    }
+
+                    fieldset {
+                        border:none;
+                        background:#f4f4f4;
+                        .rem(margin, 20 0);
+                        .rem(padding, 20);
+                        white-space:nowrap;
+                        .zero;
+
+                        @media all and (min-width: 1200px) {
+                            .relative;
+                            margin:0 0 20px;
+                            padding:0;
+                            background:none;
+                            .right;
+                        }
+
+                        select {
+                            .top;
+                            .rem(font-size, 11);
+                            width:35%;
+                            .rem(height, 30);
+
+                            @media all and (min-width: 1200px) {
+                                width:120px;
+                                .rem(font-size, 14);
+                                height:40px;
+                            }
+
+                        }
+
+                        input {
+                            .top;
+                            .rem(font-size, 11);
+                            width:50%;
+                            .rem(height, 30);
+                            border:1px solid #ccc;
+                            border-right:none;
+                            border-left:none;
+                            .rem(padding, 0 10);
+
+                            @media all and (min-width: 1200px) {
+                                width:220px;
+                                .rem(font-size, 14);
+                                height:40px;
+                            }
+                        }
+
+                        button {
+                            .top;
+                            width:15%;
+                            .rem(height, 30);
+                            border:none;
+                            background:#5E7B00;
+
+                            @media all and (min-width: 1200px) {
+                                width:50px;
+                                height:40px;
+                            }
+
+                            i {
+                                .rem(font-size, 16);
+                                color:@white;
+
+                                @media all and (min-width: 1200px) {
+                                    .rem(font-size, 18);
+                                    .relative;
+                                    top:-2px;
+                                }
+
+                            }
+                        }
+                    }
+
+                    ul.list {
+                        .no-list;
+                        .mapazero;
+                        border-top:2px solid #5E7B00;
+
+                        &>li {
+                            .relative;
+                            .rem(padding, 20 76 20 10);
+                            border-bottom:1px solid #eee;
+
+                            @media all and (min-width: 1200px) {
+                                padding-right:180px;
+                            }
+
+                            h4 {
+                                .rem(margin, 0 0 4);
+                                .rem(font-size, 12);
+                                line-height:1.6;
+
+                                @media all and (min-width: 1200px) {
+                                    font-size:17px;
+                                }
+    
+                                small {
+                                    .inline-block;
+                                    .relative;
+                                    .rem(top, -2);
+                                    .center;
+                                    .rem(width, 30);
+                                    .rem(height, 16);
+                                    .rem(line-height, 16);
+                                    .rem(font-size, 9);
+                                    .rem(margin, 0 2 0 0);
+                                    color:@white;
+
+                                    @media all and (min-width: 1200px) {
+                                        font-size:14px;
+                                        width:46px;
+                                        height:24px;
+                                        line-height:24px;
+                                        margin:0 10px 0 0;
+                                    }
+        
+
+                                    &.event {
+                                        background:#5771B5;
+                                    }
+
+                                    &.notice {
+                                        background:#5E7B00;
+                                    }
+                                }
+
+                                i {
+                                    color:#0075bc;
+                                }
+                            }
+
+                            ul {
+                                .absolute;
+                                .rem(right, 10);
+                                .rem(top, 20);
+                                .no-list;
+                                .mapazero;
+                                .right;
+                                line-height:1.6;
+
+                                @media all and (min-width: 1200px) {
+                                    top:auto;
+                                    bottom:20px;
+                                }
+                                li {
+                                    .rem(font-size, 10);
+                                    color:#555;
+
+                                    @media all and (min-width: 1200px) {
+                                        .inline-block;
+                                        font-size:14px;
+                                        margin-left:10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    div.btn-area {
+                        .relative;
+                        .rem(padding, 10 0 0);
+                        .rem(min-height, 40);
+
+                        @media all and (min-width: 1200px) {
+                            padding:20px 0 0;
+                            min-height:60px;
+                        }
+
+                        a {
+                            .inline-block;
+                            .rem(height, 30);
+                            .rem(line-height, 30);
+                            .rem(padding, 0 20);
+                            border:1px solid #ccc;
+                            .rem(font-size, 12);
+
+                            @media all and (min-width: 1200px) {
+                                height:40px;
+                                line-height:40px;
+                                font-size:17px;
+                            }
+    
+
+                            &.right {
+                                .absolute;
+                                right:0;
+                                .rem(top, 10);
+
+                                @media all and (min-width: 1200px) {
+                                    top:20px;
+                                }
+                            }
+
+                            &.main {
+                                background:#5E7B00;
+                                color:@white;
+                                border-color:transparent;
+                            }
+                        }
+                    }
                 }
             }
+
+            section.sub-board-view {
+                .center;
+
+                .container {
+    
+                    h3 {
+                        .center;
+                        .rem(font-size, 20);
+                        .rem(margin, 30 0 10);
+
+                        @media all and (min-width: 1200px) {
+                            font-size:36px;
+                            margin:40px 0 30px;
+                        }
+                    }
+
+                    div.board-head {
+                        border-top:2px solid #5E7B00;
+                        border-bottom:1px solid #eee;
+                        .rem(padding, 20 0);
+                        .center;
+
+                        @media all and (min-width: 1200px) {
+                            padding:30px 0;
+                        }
+
+                        h4 {
+                            .rem(margin, 0 0 6);
+                            .rem(font-size, 14);
+                            line-height:1.6;
+
+                            @media all and (min-width: 1200px) {
+                                font-size:24px;
+                                margin:0 0 10px;
+                            }
+                        }
+
+                        ul {
+                            .mapazero;
+                            .no-list;
+
+                            li {
+                                .inline-block;
+                                .rem(margin, 0 4);
+                                .rem(font-size, 11);
+
+                                @media all and (min-width: 1200px) {
+                                    font-size:14px;
+                                }
+                            }
+                        }
+                    }
+
+                    div.text {
+                        .rem(padding, 20 10);
+                        .rem(font-size, 12);
+                        line-height:1.6;
+                        border-bottom:1px solid #ccc;
+
+                        @media all and (min-width: 1200px) {
+                            font-size:15px;
+                        }
+
+                        img {
+                            max-width:100%;
+                            .rem(margin, 10 0);
+                        }
+                    }
+
+
+
+
+
+
+                    div.btn-area {
+                        .relative;
+                        .rem(padding, 10 0 30);
+                        .rem(min-height, 40);
+
+                        @media all and (min-width: 1200px) {
+                            padding:20px 0 40px;
+                            min-height:60px;
+                        }
+
+                        a {
+                            .inline-block;
+                            .rem(height, 30);
+                            .rem(line-height, 30);
+                            .rem(padding, 0 10);
+                            border:1px solid #ccc;
+                            .rem(font-size, 12);
+
+                            @media all and (min-width: 1200px) {
+                                height:40px;
+                                line-height:40px;
+                                font-size:17px;
+                            }
+    
+
+                            &.right {
+                                .absolute;
+                                right:0;
+                                .rem(top, 10);
+
+                                @media all and (min-width: 1200px) {
+                                    top:20px;
+                                }
+                            }
+
+                            &.main {
+                                background:#5E7B00;
+                                color:@white;
+                                border-color:transparent;
+                                .rem(padding, 0 20);
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            section.sub-board-write {
+                .center;
+
+                .container {
+    
+                    h3 {
+                        .center;
+                        .rem(font-size, 20);
+                        .rem(margin, 30 0 10);
+
+                        @media all and (min-width: 1200px) {
+                            font-size:36px;
+                            margin:40px 0 30px;
+                        }
+                    }
+
+                    div.board-head {
+                        border-top:2px solid #5E7B00;
+                        border-bottom:1px solid #eee;
+
+                        .center;
+
+
+                        input[type="text"] {
+                            .rem(height, 40);
+                            .rem(padding, 0 10);
+                            width:100%;
+                            border:none;
+                            .rem(font-size, 14);
+
+                            @media all and (min-width: 1200px) {
+                                font-size:18px;
+                                height:50px;
+                            }
+                        }
+
+                    }
+
+                    div.text {
+                        line-height:1.6;
+                        border-bottom:1px solid #ccc;
+
+                        textarea {
+                            width:100%;
+                            .rem(min-height, 160);
+                            border:none;
+                            .rem(padding, 10);
+                            .rem(font-size, 12);
+
+                            @media all and (min-width: 1200px) {
+                                min-height: 260px;
+                                padding: 20px;
+                                font-size:15px;
+                            }
+                        }
+
+                    }
+
+                    ul.file {
+                        .rem(padding, 20 0 10);
+                        .rem(margin, 0);
+                        .no-list;
+                        border-bottom:1px solid #ccc;
+
+                        li {
+                            .rem(font-size, 10);
+                            .rem(margin, 0 0 10);
+
+                            @media all and (min-width: 1200px) {
+                                font-size:14px;
+                            }
+
+                            input[type="file"] {
+                                .rem(margin, 0 0 0 10);
+                            }
+                        }
+                    }
+
+
+
+
+
+
+                    div.btn-area {
+                        .relative;
+                        .rem(padding, 10 0 30);
+                        .rem(min-height, 40);
+
+                        @media all and (min-width: 1200px) {
+                            padding:20px 0 40px;
+                            min-height:60px;
+                        }
+
+                        a {
+                            .inline-block;
+                            .rem(height, 30);
+                            .rem(line-height, 30);
+                            .rem(padding, 0 10);
+                            border:1px solid #ccc;
+                            .rem(font-size, 12);
+
+                            @media all and (min-width: 1200px) {
+                                height:40px;
+                                line-height:40px;
+                                font-size:17px;
+                            }
+    
+
+                            &.right {
+                                .absolute;
+                                right:0;
+                                .rem(top, 10);
+
+                                @media all and (min-width: 1200px) {
+                                    top:20px;
+                                }
+                            }
+
+                            &.main {
+                                background:#5E7B00;
+                                color:@white;
+                                border-color:transparent;
+                                .rem(padding, 0 20);
+                            }
+                        }
+                    }
+
+                }
+            }
+
         }
     }
 
