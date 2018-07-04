@@ -1460,6 +1460,86 @@ body {
         /* SUB */
         &.sub {
 
+
+            section.sub-login {
+                .center;
+
+                .container {
+                    .center;
+
+                    h3 {
+                        .rem(font-size, 20);
+                        .rem(margin, 30 0 10);
+
+                        @media all and (min-width: 1200px) {
+                            font-size:36px;
+                            margin:40px 0 30px;
+                        }
+                    }
+
+                    ul {
+                        .mapazero;
+                        .no-list;
+                        .rem(width, 280);
+                        .rem(margin, 30 auto 50);
+
+                        @media all and (min-width: 1200px) {
+                            width:360px;
+                            margin:40px auto 100px;
+                        }
+                        li {
+                            .rem(margin, 0 0 10);
+                            
+                            @media all and (min-width: 1200px) {
+                                margin:0 0 20px;
+                            }
+
+                            a {
+                                .block;
+                                .rem(height, 40);
+                                .rem(line-height, 40);
+                                .rem(border-radius, 6);
+                                .rem(font-size, 12);
+                                background:#eee;
+                                .pointer;
+
+                                @media all and (min-width: 1200px) {
+                                    height:70px;
+                                    line-height:70px;
+                                    font-size:18px;
+                                }
+
+                                &.naver {
+                                    background:url("../images/logo-naver.svg") no-repeat #2DB400;
+                                    .rem(background-size, 26 26);
+                                    .rem(background-position, 10 center);
+                                    color:@white;
+
+                                    @media all and (min-width: 1200px) {
+                                        background-size:40px 40px;
+                                        background-position:20px center;
+                                    }
+
+                                }
+
+                                &.kakao {
+                                    background:url("../images/logo-kakao.svg") no-repeat #E4D533;
+                                    .rem(background-size, 26 26);
+                                    .rem(background-position, 10 center);
+                                    color:#381E1F;
+
+                                    @media all and (min-width: 1200px) {
+                                        background-size:40px 40px;
+                                        background-position:20px center;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+
             section.sub-image {
                 .inline-block;
                 .relative;
@@ -2803,6 +2883,7 @@ body {
 
                         small {
                             .absolute;
+                            .normal;
                             right:0;
                             bottom:0;
                             color:#555;
@@ -2904,9 +2985,11 @@ body {
 
                             @media all and (min-width: 1200px) {
                                 .inline-block;
+                                .top;
                                 width:calc(~"(100% - 40px) / 3");
                                 margin-right:20px;
                                 padding:10px 0 0 150px;
+                                white-space:normal;
 
                                 &:last-child {
                                     margin-right:0;
