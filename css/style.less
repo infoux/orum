@@ -4075,36 +4075,44 @@ body {
                     }
                     ul.list {
                         .no-list;
-
+                        .zero;
                         padding:0;
                         .rem(margin, 0 0 20);
-                        border-top:2px solid #5E7B00;
 
                         &>li {
                             .relative;
-                            border-bottom:1px solid #ccc;
+                            border:1px solid #ccc;
+                            .rem(margin-bottom, 20);
+                            .drop-shadow();
 
+
+                            @media all and (min-width: 1200px) {
+                                .inline-block;
+                                width:calc(~"(100% - 40px) / 3");
+                                margin-right:20px;
+
+                                &:nth-child(3n) {
+                                    margin-right:0;
+                                }
+                            }
 
                             a {
-                                .block;
+                                .inline-block;
+                                width:100%;
                                 height:100%;
-                                .rem(padding, 20 0 0);
+                                padding:0;
 
                                 @media all and (min-width: 1200px) {
-                                    .left;
-                                    padding:20px 0 20px 230px;
-                                    min-height:165px;
+                                    min-height:350px;
                                 }
 
                                 p.image {
                                     margin:0;
 
                                     @media all and (min-width: 1200px) {
-                                        .absolute;
-                                        left:0;
-                                        top:20px;
-                                        width:200px;
-                                        height:120px;
+
+                                        width:100%;
+                                        height:200px;
                                         .hidden;
 
                                         img {
@@ -4131,13 +4139,16 @@ body {
 
                                     small {
                                         .block;
+                                        .absolute;
+                                        .rem(right, 0);
+                                        .rem(top, 0);
                                         .rem(font-size, 12);
                                         .normal;
-                                        color:#5E7B00;
+                                        background:#5E7B00;
+                                        color:@white;
+                                        .rem(padding, 5 10);
                                     
                                         @media all and (min-width: 1200px) {
-                                            .inline-block;
-                                            margin:0 0 0 10px;
                                             font-size:14px;
                                         }
                                     }
@@ -4146,6 +4157,8 @@ body {
                                 p.text {
                                     .rem(margin, 0 0 10);
                                     .rem(font-size, 12);
+                                    .rem(padding, 0 20);
+                                    line-height:1.6;
                                     
                                     @media all and (min-width: 1200px) {
                                         font-size:14px;
@@ -4154,15 +4167,16 @@ body {
                                 }
 
                                 p.date {
-                                    .rem(margin, 0 0 16);
-                                    .rem(font-size, 10);
+                                    .inline-block;
+                                    width:100%;
+                                    background:#eee;
+                                    margin:0;
+                                    .rem(padding, 10 0);
+                                    .rem(font-size, 11);
                                     color:#555;
                                     .bold;
 
                                     @media all and (min-width: 1200px) {
-                                        .absolute;
-                                        right:0;
-                                        top:30px;
                                         font-size:17px;
                                     }
                                     
@@ -4172,28 +4186,26 @@ body {
 
                             div.link-set {
                                 .zero;
-                                .rem(margin, 20 0);
+                                .absolute;
+                                .rem(left, 10);
+                                .rem(top, 10);
 
-                                @media all and (min-width: 1200px) {
-                                    .absolute;
-                                    right:0;
-                                    bottom:20px;
-                                    width:296px;
-                                }
 
 
                                 button {
                                     .inline-block;
                                     .rem(font-size, 12);
-                                    .rem(height, 30);
-                                    border:1px solid #ccc;
-                                    width:calc(~"(100% - 10px) / 2");
+                                    .rem(height, 40);
+                                    .rem(width, 40);
+                                    border:none;
                                     background:@white;
+                                    border-radius:50%;
+                                    .drop-shadow();
                                     
                                     @media all and (min-width: 1200px) {
-                                        height:46px;
-                                        font-size:17px;
-                                        .center;
+                                        font-size:14px;
+                                        width:50px;
+                                        height:50px;
                                     }
 
 
@@ -4202,8 +4214,15 @@ body {
                                     }
 
                                     i {
+                                        .block;
                                         color:#5E7B00;
-                                        .rem(margin-right, 4);
+                                        .rem(margin, 0 auto);
+
+                                        @media all and (min-width: 1200px) {
+                                            font-size:18px;
+
+                                        }
+    
                                     }
                                 }
                             }
