@@ -3772,7 +3772,27 @@ body {
                     }
 
 
+                    ul.file {
+                        .rem(padding, 20 0 10);
+                        .rem(margin, 0);
+                        .no-list;
+                        border-bottom:1px solid #ccc;
 
+                        li {
+                            .rem(font-size, 10);
+                            .rem(margin, 0 0 10);
+
+                            @media all and (min-width: 1200px) {
+                                font-size:14px;
+                            }
+
+                            a {
+                                .rem(margin, 0 0 0 10);
+                                text-decoration:underline;
+                                color:#0075bc;
+                            }
+                        }
+                    }
 
 
 
