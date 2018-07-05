@@ -3745,12 +3745,24 @@ body {
 
                             li {
                                 .inline-block;
-                                .rem(margin, 0 4);
+                                .rem(padding, 2 6);
                                 .rem(font-size, 11);
 
                                 @media all and (min-width: 1200px) {
-                                    font-size:14px;
+                                    font-size:15px;
                                 }
+                                
+
+                                &.name {
+                                    .bold;
+                                    color:#5E7B00;
+                                }
+                                
+                                &.category {
+                                    background:#eee;
+                                }
+
+
                             }
                         }
                     }
