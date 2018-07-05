@@ -3081,21 +3081,20 @@ body {
 
                         li {
                             .relative;
-                            .rem(min-height, 90);
+                            .rem(min-height, 106);
                             .rem(padding, 10 0 0 110);
                             .rem(margin, 0 0 15);
+                            border-bottom:1px dotted #ddd;
+                            
+                            &:last-child {
+                                border:none;
+                            }
 
                             @media all and (min-width: 1200px) {
-                                .inline-block;
-                                .top;
-                                width:calc(~"(100% - 40px) / 3");
-                                margin-right:20px;
+                                min-height:140px;
                                 padding:10px 0 0 150px;
                                 white-space:normal;
 
-                                &:last-child {
-                                    margin-right:0;
-                                }
                             }
 
                             p.image {
@@ -3151,26 +3150,58 @@ body {
                                     font-size:14px;
                                 }
                             }
+
+                            div.star {
+                                .rem(margin, 6 0 0);
+
+                                @media all and (min-width: 1200px) {
+                                    margin:0;
+                                    .absolute;
+                                    right:0;
+                                    top:40px;
+                                }
+
+                                span {
+                                    .rem(font-size, 12);
+                                    .rem(margin, 0 10 0 0);
+
+                                    @media all and (min-width: 1200px) {
+                                        font-size:17px;
+                                    }
+                                }
+
+                                i.icon-star {
+                                    .rem(font-size, 16);
+                                    color:#ccc;
+
+                                    @media all and (min-width: 1200px) {
+                                        font-size:20px;
+                                    }
+
+                                    &.on {
+                                        color:#FF9300;
+                                    }
+
+                                    &::before {
+                                        margin:0;
+                                    }
+                                }
+                            }
                         }
 
                     }
 
                     a.more {
                         .block;
+                        .absolute;
+                        .rem(right, 10);
+                        .rem(top, 40);
                         .rem(font-size, 11);
-                        .rem(line-height, 35);
-                        .rem(width, 100);
-                        .rem(border-radius, 17.5);
-                        .rem(margin, 20 auto 0);
-                        .center;
-                        background:@white;
 
                         @media all and (min-width: 1200px) {
-                            margin:30px auto 0;
-                            line-height:50px;
-                            font-size:18px;
-                            border-radius:25px;
-                            width:160px;
+                            font-size:14px;
+                            right:0;
+
                         }
 
                     }
