@@ -249,6 +249,24 @@
       "css": "edit",
       "code": 59414,
       "src": "fontawesome"
+    },
+    {
+      "uid": "35b65a48339004a947a1dea3092e1daa",
+      "css": "tree-2",
+      "code": 59455,
+      "src": "maki"
+    },
+    {
+      "uid": "d8813acae9d35ada76fda399a6000587",
+      "css": "soccer",
+      "code": 59447,
+      "src": "maki"
+    },
+    {
+      "uid": "4efb719e797c54b3c58e5ae061d29d53",
+      "css": "droplet",
+      "code": 59415,
+      "src": "entypo"
     }
   ]
 }
