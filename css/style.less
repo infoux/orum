@@ -3026,13 +3026,21 @@ body {
                             margin:0 0 0 40px;
                         }
                         div.area {
-                            .rem(min-height, 170);
                             .rem(margin, 0 0 30);
                             background:#ccc;
                             
                             @media all and (min-width: 1200px) {
                                 height:240px;
                                 margin:0;
+                            }
+
+                            video {
+                                width:100%;
+
+                                @media all and (min-width: 1200px) {
+                                    height:100%;
+                                }
+    
                             }
                         }
                     }
