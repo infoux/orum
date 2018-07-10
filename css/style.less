@@ -1725,24 +1725,26 @@ body {
                 .center;
                 .relative;
                 z-index:10;
-                border-bottom:1px solid #ccc;
+                background:#f4f4f4;
 
                 .container {
                     .none;
+                    
 
                     @media all and (min-width: 1200px) {
                         .block;
+                        padding:20px 0;
                         line-height:49px;
                         &>ul {
                             .mapazero;
                             .zero;
                             .no-list;
-                            border-left:1px solid #ccc;
 
                             &>li {
                                 .top;
                                 .relative;
                                 .inline-block;
+                                margin-right:10px;
 
                                 &>a {
                                     .block;
@@ -1751,10 +1753,10 @@ body {
                                     min-width:180px;
                                     padding:0 10px;
                                     font-size:16px;
-                                    border-right:1px solid #ccc;
-
+                                    border-bottom:2px solid #333;
                                     &.on {
-                                        background:#f9f9f9;
+                                        background:@white;
+                                        border-radius:10px 10px 0 0;
                                     }
                                     
                                     i {
@@ -1776,6 +1778,16 @@ body {
                                     a {
                                         .zero;
                                         min-width:50px;
+                                        background:@white;
+                                        border-radius:50%;
+                                        border:none;
+                                        
+                                        i {
+                                            color:#333;
+                                            &.on {
+                                                transform:none;
+                                            }
+                                        }
                                     }
                                 }
 
@@ -1784,16 +1796,31 @@ body {
                                     .no-list;
                                     margin:0;
                                     .absolute;
-                                    padding:10px 20px;
-                                    background:#f9f9f9;
+                                    padding:0;
+                                    background:#f0f0f0;
                                     left:-1px;
                                     right:0;
                                     top:49px;
-                                    border:1px solid #ccc;
+                                    border-radius:0 0 10px 10px;
                                     font-size:14px;
+                                    .hidden;
 
                                     li {
-                                        line-height:38px;
+
+                                        a {
+                                            .block;
+                                            .ani();
+                                            line-height:38px;
+                                            padding:8px 20px;
+                                            border-bottom:1px solid #e4e4e4;
+
+                                            &:hover {
+                                                color:#5E7B00;
+                                                background:#e4e4e4;
+                                                padding:8px 20px 8px 30px;
+                                                .ani();
+                                            }
+                                        }
                                     }
                                 }
 
@@ -5220,8 +5247,221 @@ body {
                 }
             }
 
+            section.sub-report-info {
+                .center;
+                .container {
+                    .center;
+    
+                    h3 {
+                        .rem(font-size, 20);
+                        .rem(margin, 30 0 10);
+
+                        @media all and (min-width: 1200px) {
+                            font-size:36px;
+                            margin:40px 0 30px;
+                        }
+                    }
+                    
+                    dl {
+
+                        @media all and (min-width: 1200px) {
+                            .left;
+                        }
+
+                        dt {
+                            .inline-block;
+                            .rem(width, 45);
+                            .rem(height, 45);
+                            .rem(line-height, 45);
+                            font-family:verdana;
+                            .rem(font-size, 16);
+                            .bold;
+                            border-radius:50%;
+                            color:@white;
+                            background:#5E7B00;
+
+                            @media all and (min-width: 1200px) {
+                                float:left;
+                                margin:20px;
+                                width:60px;
+                                height:60px;
+                                line-height:60px;
+                                font-size:24px;
+                                .center;
+                            }
+
+                        }
+
+                        dd {
+                            padding:0;
+                            .rem(margin, 20 0 30);
+                            line-height:1.6;
 
 
+                            @media all and (min-width: 1200px) {
+                                padding:30px 30px 30px 120px;
+                                border:1px solid #ccc;
+                            }
+
+                            strong {
+                                .block;
+                                .rem(font-size, 12);
+                                color:#5E7B00;
+                                word-break:keep-all;
+
+                                @media all and (min-width: 1200px) {
+                                    font-size:22px;
+                                }
+    
+                            }
+
+                            p {
+                                .rem(font-size, 10);
+                                .rem(margin, 10 0 0);
+                                word-break:keep-all;
+                                color:#555;
+
+                                @media all and (min-width: 1200px) {
+                                    font-size:17px;
+                                    margin:20px 0 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            section.sub-report {
+                background:#f4f4f4;
+                .center;
+                line-height:1.6;
+                .rem(padding, 0 0 30px);
+
+                @media all and (min-width: 1200px) {
+                    padding:20px 0 50px;
+                }
+
+                .container {
+                  
+                    h3 {
+                        .center;
+                        color:#5E7B00;
+                        .rem(margin, 20 0);
+                        .rem(font-size, 15);
+
+                        &::after {
+                            content:"";
+                            .block;
+                            .rem(width, 60);
+                            .rem(margin, 20 auto);
+                            height:2px;
+                            background:#5E7B00;
+                        }
+
+                        @media all and (min-width: 1200px) {
+                            font-size:28px;
+                            margin:20px 0 30px;
+                        }
+                    }
+
+                    ul {
+                        .no-list;
+                        padding:0;
+                        .center;
+                        .zero;
+                        .rem(margin, 20 0);
+
+                        li {
+
+                            @media all and (min-width: 1200px) {
+                                .inline-block;
+                                .top;
+                                width:380px;
+                            }
+
+                            h4 {
+                                .rem(font-size, 12);
+
+                                @media all and (min-width: 1200px) {
+                                    font-size:24px;
+                                }
+
+                                &::after {
+                                    content:"";
+                                    .block;
+                                    .rem(width, 148);
+                                    .rem(height, 148);
+                                    .rem(margin, 10 auto);
+
+                                    @media all and (min-width: 1200px) {
+                                        width:210px;
+                                        height:210px;
+                                        margin:20px auto;
+                                    }
+                                  }
+                            }
+
+                            p {
+                                .rem(font-size, 10);
+                                .mapazero;
+                                line-height:1.6;
+
+                                @media all and (min-width: 1200px) {
+                                    font-size:17px;
+                                }
+
+                            }
+
+                            a {
+                                .inline-block;
+                                .rem(padding, 0 20);
+                                .rem(height, 30);
+                                .rem(line-height, 30);
+                                .rem(font-size, 11);
+                                border:1px solid #ccc;
+                                .rem(border-radius, 30);
+                                .rem(margin, 20 2);
+
+                                @media all and (min-width: 1200px) {
+                                    height:50px;
+                                    line-height:50px;
+                                    font-size:18px;
+                                }
+                            }
+
+                            &.web {
+                                h4 {
+                                    &::after {
+                                        background:url("../images/icon-web.svg") no-repeat center / 100% 100%;
+                                    }
+                                }
+
+                                a {
+                                    border-color:#18B0BF;
+                                    color:#027F8B;
+                                }
+                            }
+
+                            &.tel {
+                                h4 {
+                                    &::after {
+                                        background:url("../images/icon-tel.svg") no-repeat center / 100% 100%;
+                                    }
+                                }
+
+                                a {
+                                    border-color:#F2AC1E;
+                                    color:#B27A0A;
+
+                                    @media all and (min-width: 1200px) {
+                                        .none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 
 
 
