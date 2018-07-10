@@ -120,7 +120,12 @@ $(document).ready(function () {
             );
 
             $('#header .menu h2 a').bind("click", function (e) {
-                e.preventDefault();
+                var childrenSize  =   $(this).parent().parent().children("ul").size();
+                if(childrenSize==1){
+   
+                    e.preventDefault();
+                }
+
                 $(this)
                     .parent()
                     .parent()
