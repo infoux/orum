@@ -1387,14 +1387,16 @@ body {
 
                                     a {
                                         .left;
-                                        padding:80px 0 0 140px;
+                                        padding:70px 0 0 180px;
                                         font-size:26px;
                                         .bold;
+                                        color:@white;
 
                                         strong {
-                                            .inline-block;
                                             padding-right:6px;
                                             .bold;
+                                            color:#fff09e;
+
                                         }
                                     }
                                 }
@@ -1405,8 +1407,8 @@ body {
                                     .rem(background-size, 32 auto);
 
                                     @media all and (min-width: 1200px) {
-                                        background-position: 10% 46%;
-                                        background-size:80px auto;
+                                        background:url("../images/icon-web.svg") no-repeat 0% 10% #18b0bf;
+                                        background-size:180px auto;
                                     }
 
 
@@ -4809,6 +4811,11 @@ body {
                                     background:#ccc;
                                     color:#999;
 
+                                    @media all and (min-width: 1200px) {
+                                        padding:0;
+                                    }
+    
+
                                 }
 
                             }
@@ -4876,19 +4883,56 @@ body {
                             }
                         }
 
-                        button {
-                            border:none;
-                            .rem(width, 40);
-                            .rem(height, 40);
-                            .zero;
-                            background:url("../images/icon-add.svg") no-repeat #ccc center / 60% 60%;
+                        ul.wp-upload-list {
+                            padding:0;
+                            .rem(margin, 10 0);
+                            .no-list;
 
-                            @media all and (min-width: 1200px) {
-                                width:80px;
-                                height:80px;
-                                margin-right:2px;
+                            li {
+
+                                p {
+                                    .zero;
+                                    .rem(margin, 0 6 0 0);
+                                    .relative;
+                                    .inline-block;
+
+                                    span {
+                                        .block;
+                                        width:100px;
+                                        background:#eee;
+                                        .rem(font-size, 9);
+                                        .ellipse;
+                                        .rem(padding, 4);
+
+                                    }
+
+                                    
+                                    button {
+                                        .absolute;
+                                        .pointer;
+                                        outline:none;
+                                        .rem(right, -4);
+                                        .rem(top, -4);
+                                        border:none;
+                                        .rem(width, 20);
+                                        .rem(height, 20);
+                                        .zero;
+                                        transform:rotate(45deg);
+                                        border-radius:50%;
+                                        
+                                        background:url("../images/icon-add.svg") no-repeat #333 center / 60% 60%;
+
+                                        @media all and (min-width: 1200px) {
+                                            width:30px;
+                                            height:30px;
+                                        }
+                                    }
+
+                                }
                             }
                         }
+
+
                     }
 
 
