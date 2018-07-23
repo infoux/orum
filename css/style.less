@@ -4219,14 +4219,59 @@ body {
                                 }
 
                                 &.text {
-                                    input[type="text"] {
-
+                                    .text-input {
+                                        .relative;
+                                        .inline-block;
+                                        .remCalc(width, 50);
+                                        .top;
 
                                         @media all and (min-width: 1200px) {
                                             width:260px;
                                         }
+
+                                        input[type="text"] {
+                                            width:100%;
+
+                                        }
+
+                                        div.text-list {
+                                            .absolute;
+                                            z-index:400;
+                                            left:0;
+                                            right:0;
+                                            .rem(font-size, 10);
+                                            background:#eee;
+                                            border:1px solid #ccc;
+                                            .drop-shadow();
+
+                                            @media all and (min-width: 1200px) {
+                                                width:260px;
+                                                right:auto;
+                                                font-size:14px;
+                                            }
+
+                                            p {
+                                                margin:0;
+                                                .rem(padding, 10);
+                                                border-bottom:1px solid #ccc;
+                                                .left;
+
+                                                @media all and (min-width: 1200px) {
+                                                    padding:16px;
+                                                }
+
+                                                &:last-of-type {
+                                                    border:none;
+                                                }
+
+                                                strong {
+                                                    color:#5E7B00;
+                                                }
+                                            }
+                                        }
                                     }
                                 }
+
 
 
 
