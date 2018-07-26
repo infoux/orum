@@ -5304,6 +5304,51 @@ body {
                         }
 
                     }
+
+                    div.btn-area {
+                        .relative;
+                        .rem(padding, 10 0 30);
+                        .rem(min-height, 40);
+
+                        @media all and (min-width: 1200px) {
+                            padding:20px 0 40px;
+                            min-height:60px;
+                        }
+
+                        a {
+                            .inline-block;
+                            .rem(height, 30);
+                            .rem(line-height, 30);
+                            .rem(padding, 0 10);
+                            border:1px solid #ccc;
+                            .rem(font-size, 12);
+
+                            @media all and (min-width: 1200px) {
+                                height:40px;
+                                line-height:40px;
+                                font-size:17px;
+                            }
+    
+
+                            &.right {
+                                .absolute;
+                                right:0;
+                                .rem(top, 10);
+
+                                @media all and (min-width: 1200px) {
+                                    top:20px;
+                                }
+                            }
+
+                            &.main {
+                                background:#5E7B00;
+                                color:@white;
+                                border-color:transparent;
+                                .rem(padding, 0 20);
+                            }
+                        }
+                    }
+
                 }
             }
 
