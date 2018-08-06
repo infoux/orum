@@ -819,7 +819,7 @@ body {
                 @media all and (min-width: 1200px) {
                     ul.util {
                         .absolute;
-                        right:200px;
+                        right:180px;
                         top:48px;
                         .mapazero;
                         .no-list;
@@ -830,7 +830,7 @@ body {
                             a {
                                 color:#ccc;
                                 font-size:14px;
-                                padding:0 10px;
+                                padding-left:10px;
                             }
                         }
                     }
@@ -844,7 +844,7 @@ body {
                         height:44px;
                         line-height:44px;
                         .center;
-                        width:176px;
+                        width:160px;
                         font-family:verdana;
                         border-radius:14px;
                         color:#999;
@@ -858,13 +858,13 @@ body {
                         .mapazero;
                         .no-list;
                         .absolute;
-                        left:390px;
+                        left:360px;
                         top:0;
 
                         &>li {
                             .inline-block;
                             .relative;
-                            padding:0 40px 0 0;
+                            padding:0 30px 0 0;
                             line-height:110px;
 
                             h2 {
@@ -1276,6 +1276,7 @@ body {
                                 .absolute;
                                 right:0;
                                 bottom:0;
+                                .normal;
                                 .rem(font-size, 10);
 
                                 
@@ -1346,8 +1347,8 @@ body {
                         @media all and (min-width: 1200px) {
                             .inline-block;
                             .top;
-                            width:440px;
-                            margin:0 0 0 30px;
+                            width:430px;
+                            margin:0 0 0 40px;
                             padding:0;
                         }
                         ul {
@@ -1359,10 +1360,9 @@ body {
                                 .inline-block;
                                 .relative;
                                 .top;
-                                width:calc(~"(100% - 10px) / 2");
+                                width:calc(~"(100% - 20px) / 3");
                                 margin-right:10px;
                                 border-radius:50%;
-
 
                                 &::before {
                                     content:"";
@@ -1373,13 +1373,6 @@ body {
 
                                 &:last-child {
                                     margin-right:0;
-
-
-                                    @media all and (min-width: 1200px) {
-                                        .none;
-                                    }
-    
-
                                 }
                                 
                                 a {
@@ -1389,6 +1382,7 @@ body {
                                     .rem(font-size, 10);
                                     padding:60% 0 0;
                                     line-height:1.4;
+                                    color:@white;
 
                                     @media all and (min-width: 1200px) {
                                         font-size:18px;
@@ -1403,10 +1397,10 @@ body {
                                 @media all and (min-width: 1200px) {
                                     .top;
                                     .left;
-                                    width:calc(~"100% - 30px");
+                                    width:190px;
                                     border-radius:10px;
                                     height:210px;
-                                    margin-left:30px;
+                                    margin-left:20px;
                                     margin-right:0;
 
                                     &::before {
@@ -1414,39 +1408,49 @@ body {
                                     }
 
                                     a {
-                                        .left;
-                                        padding:70px 0 0 180px;
-                                        font-size:26px;
-                                        .bold;
-                                        color:@white;
+                                        .center;
+                                        padding:150px 0 0 0;
+                                        font-size:18px;
 
                                         strong {
-                                            padding-right:6px;
-                                            .bold;
-                                            color:#fff09e;
-
+                                            .inline-block;
+                                            .normal;
                                         }
                                     }
                                 }
 
                                 &.minwon {
 
-                                    background:url("../images/banner02.svg") no-repeat center 20% #CCD6AC;
-                                    .rem(background-size, 32 auto);
+                                    background:url("../images/banner01.svg") no-repeat center 26% #d13a2a;
+                                    .rem(background-size, 34% auto);
 
                                     @media all and (min-width: 1200px) {
-                                        background:url("../images/icon-web.svg") no-repeat 0% 10% #18b0bf;
-                                        background-size:180px auto;
+                                        background-size:110px auto;
                                     }
-
 
                                 }
 
 
                                 &.resque {
-                                    background:url("../images/banner03.svg") no-repeat center 26% #D6AEAC;
-                                    .rem(background-size, 32 auto);
+                                    background:url("../images/banner02.svg") no-repeat center 26% #bd860f;
+                                    .rem(background-size, 34% auto);
+
+                                    @media all and (min-width: 1200px) {
+                                        .none;
+                                    }
                                 }
+
+                                &.reg {
+
+                                    background:url("../images/banner03.svg") no-repeat center 26% #0f9f96;
+                                    .rem(background-size, 34% auto);
+
+                                    @media all and (min-width: 1200px) {
+                                        background-size:110px auto;
+                                    }
+
+                                }
+
                             }
                         }
                     }
